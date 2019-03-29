@@ -1,0 +1,742 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>解析大题</title>
+<style>
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  padding: 0.8em 0em;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-family: 'PT Sans', sans-serif;
+}
+pre,
+code {
+  font-family: 'Inconsolata', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;line-height: 1.1em;
+}
+html {
+  background-color: #2D2D2D;
+  color: #fff;
+  margin: 1em;
+}
+body {
+  background-color: #2D2D2D;color: #fff;
+  margin: 0 auto;
+  max-width: 23cm;
+  padding: 1em;
+}
+.markdown-body {font-family: 'PT Sans', sans-serif; background-color: #2D2D2D;color: #fff;}
+code {
+  background-color: #353535;
+  padding: 2px;
+}
+a {
+  color: #99cc99;
+}
+a:visited {
+  color: #82BC82;
+}
+a:hover {
+  color: #82BC82;
+}
+h1 {
+  color: #6ACCCB;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #6ACCCB;
+}
+pre {
+  background-color: #2D2D2D;
+  color: #fff;
+  border: 1pt solid #ccc;
+  padding: 1em;
+  box-shadow: 5pt 5pt 8pt #333;
+}
+pre code {
+  background-color: #2D2D2D;
+}
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5 {
+  font-size: 1.15em;
+}
+h6 {
+  font-size: 1.15em;
+}
+
+table {
+
+  overflow: auto;
+  box-shadow: 5pt 5pt 8pt #333;
+}
+
+table th {
+  font-weight: bold;
+  background:#353535;
+}
+
+table th,
+table td {
+  padding: 6px 13px;
+  border: 1px solid #ccc;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+}
+
+table tr:nth-child(2n) {
+}
+
+
+@media (max-width: 540px) {
+  html{margin: 0 auto; padding: 4px;}
+}
+figcaption{text-align:center;}
+
+/* PrismJS 1.14.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #ccc;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #2d2d2d;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #999;
+}
+
+.token.punctuation {
+  color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+  color: #e2777a;
+}
+
+.token.function-name {
+  color: #6196cc;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+  color: #f08d49;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+  color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+  color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.inserted {
+  color: green;
+}
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+
+
+
+</style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+<style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
+<p>解析大题</p>
+
+<ul>
+<li>
+<a href="#toc_0">步骤1: 设点, 设线, 明确目标, 分析联动关系</a>
+<ul>
+<li>
+<a href="#toc_1">设点</a>
+</li>
+<li>
+<a href="#toc_2">设线</a>
+</li>
+<li>
+<a href="#toc_3">明确目标</a>
+</li>
+<li>
+<a href="#toc_4">分析联动关系</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_5">例题(2012年浙江高考 理科21题):</a>
+<ul>
+<li>
+<a href="#toc_6">小蒋的解答(2019-03-24):</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_7">哈哈</a>
+<ul>
+<li>
+<a href="#toc_8">例题</a>
+</li>
+<li>
+<a href="#toc_9">小蒋的解答(2019-03-24):</a>
+</li>
+<li>
+<a href="#toc_10">例题(2010年浙江高考 理科21题):</a>
+</li>
+<li>
+<a href="#toc_11">小蒋的解答(2019-03-24):</a>
+</li>
+</ul>
+
+
+<h3 id="toc_0">步骤1: 设点, 设线, 明确目标, 分析联动关系</h3>
+
+<h4 id="toc_1">设点</h4>
+
+<ul>
+<li>一般情况下设直线与曲线的两个交点为\(A(x_1,y_1), B(x_2,y_2)\)</li>
+<li>曲线上的动点设为\(P(s,t)\)或者跟题目字母不从图的其他字母, 我的建议是不要设成\((x_0,y_0)\), 因为手写很容易混淆</li>
+</ul>
+
+<h4 id="toc_2">设线</h4>
+
+<ul>
+<li>通常设为斜截式\(y=kx+b\)</li>
+<li>如果是直线与开口为<strong>左右</strong>方向的抛物线, 最好设为\(x=my+n\)的形式</li>
+</ul>
+
+<h4 id="toc_3">明确目标</h4>
+
+<ul>
+<li>解析几何最后的问题通常可转化为求某一个参数的如\(k\)的值或者取值范围</li>
+</ul>
+
+<h4 id="toc_4">分析联动关系</h4>
+
+<ul>
+<li>此步骤不需要在试卷中写明, 但最好能写在草稿纸上, 小蒋例题中都会写上这个步骤</li>
+</ul>
+
+<p><a href="#%E4%BE%8B%E9%A2%98">例题(2011年浙江高考 理科21题)</a></p>
+
+<h2 id="toc_5">例题(2012年浙江高考 理科21题):</h2>
+
+<p>\(如图, 椭圆C:\frac{x^2}{a^2}+\frac{y^2}{b^2}=1  (a&gt;b&gt;0)的离心率为\frac{1}{2}, 其左焦点到点P(2,1)的距离为\sqrt{10}. \)<br/>
+\(过原点O的直线l与椭圆相较于A,B两点, 且线段AB被直线OP平分\)<br/>
+\((I)求椭圆C的方程\)<br/>
+\((II)求\Delta ABP面积最大时直线l的方程 \)<br/>
+<img src="quiver-image-url/31C894E09D94572DAF682DB39F6C26CB.jpg%20=166x138" alt="IMAGE"/></p>
+
+<h2 id="toc_6">小蒋的解答(2019-03-24):</h2>
+
+<p>\((I)\)<br/>
+\({\color{DarkOrchid}{第1部分: 椭圆离心率....................}}\)<br/>
+\(离心率\frac{c}{a}=\frac{1}{2}\)<br/>
+\(得: a=2c\)<br/>
+\({\color{DarkOrchid}{第2部分: 两点距离公式....................}}\)<br/>
+\(左焦点到点P(2,1)的距离为\sqrt{10}\)<br/>
+\(\sqrt{(2+c)^2+(1-0)^2}=\sqrt{10}\)<br/>
+\(得c=1\)<br/>
+\({\color{DarkOrchid}{第3部分: 椭圆abc关系....................}}\)<br/>
+\(a^2=b^2+c^2\)<br/>
+\(综上得a=2, b=\sqrt3,c=1\)<br/>
+\(\therefore 椭圆方程为:\frac{x^2}{4}+\frac{y^2}{3}=1 \)</p>
+
+<p>\((II)\)<br/>
+\({\color{Red}{步骤1: 设点线,分析联动关系,明确目标....................}}\)<br/>
+\((\bigstar)设点A(x_1,y_1),B(x_2,y_2), 则AB中点R为(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})\)<br/>
+\((\bigstar)设直线l_{AB}为: y=kx+m\)</p>
+
+<p>\((\bigstar)(\bigstar)(\bigstar)联动关系: \)</p>
+
+<p>|几何(思考)||代数(计算)|<br/>
+|-|-|-|<br/>
+|\(当直线l移动(k,m)\)||\((k,m)满足两个关系式\)<br>\((也就求得了k,m的范围或值)\)|<br/>
+|\(\Downarrow\)||\(\Uparrow\)  \(所有的(x_1, x_2)通过韦达定理换成(k,m)\)|<br/>
+|\(AB两点移动(x_1,x_2)\)||\(\Uparrow\)|<br/>
+|\(\Downarrow\)||\(\Uparrow\)|<br/>
+|\(点R移动(x_1, x_2), 满足:ROP三点共线\)<br>\(\Delta PAB面积变化(x_1, x_2, k, m), 满足:面积最大\)|\(\Rightarrow\)|\((x_1, x_2, k, m)满足两个关系式 \)|</p>
+
+<p>\((\bigstar)目标:求直线l方程, 也就是求k,m\)</p>
+
+<p>\({\color{Orange}{步骤2: 几何转代数....................}}\)</p>
+
+<p>\({\color{Green}{步骤3: 代入化简....................}}\)</p>
+
+<p>\({\color{Blue}{步骤4: 结论....................}}\)</p>
+
+<hr/>
+
+<hr/>
+
+<h1 id="toc_7">哈哈</h1>
+
+<h2 id="toc_8">例题</h2>
+
+<p>\(如图, 已知抛物线C_1:x^2=y, 圆C_2:x^2+(y-4)^2=1的圆心为点M \)<br/>
+\((I)求M到抛物线C_1准线的距离\)<br/>
+\((II)一直点P是抛物线C_1上一点(异于原点), 过点P作圆C_2的两条切线 \)<br/>
+\(交抛物线C_1与A,B两点, 若过M,P两点的直线l垂直于AB,求直线l的方程 \)<br/>
+\( \)<br/>
+\( \)<br/>
+<img src="quiver-image-url/13A54334B2B835792402847DABE766E0.jpg%20=109x141" alt="IMAGE"/></p>
+
+<h2 id="toc_9">小蒋的解答(2019-03-24):</h2>
+
+<p>\((I)\)<br/>
+\({\color{DarkOrchid}{第1部分: 圆心坐标....................}}\)<br/>
+\(\because 圆C_2:x^2+(y-4)^2=1\)<br/>
+\(\therefore 圆心M坐标:(0,4) \)<br/>
+\({\color{DarkOrchid}{第2部分: 抛物线准线方程....................}}\)<br/>
+\(抛物线C_1:x^2=y中p=\frac{1}{2} \)<br/>
+\(\therefore 准线方程为y=-\frac{p}{2}=-\frac{1}{4} \)<br/>
+\(\therefore M到抛物线C的距离为4-(-\frac{1}{4})=\frac{17}{4}\)</p>
+
+<p>\((II)\)<br/>
+\({\color{Red}{步骤1: 设点线,分析联动关系,明确目标....................}}\)<br/>
+\((\bigstar)设点P(t,t^2),A(x_1,x_1^2),B(x_2,x_2^2)\)<br/>
+\(有题意得:t\neq\pm1, x_1\neq x_2\)<br/>
+\((\bigstar)设过点P的圆的切线方程为: y-t^2=k(x-t)\)<br/>
+\(即: kx-y-kt+t^2=0\)<br/>
+\((\bigstar)设直线PA,PB的斜率分别为k_1, k_2(k_1\neq k_2)\)</p>
+
+<p>\((\bigstar)(\bigstar)(\bigstar)联动关系: \)<br/>
+|几何(思考)||代数(计算)|<br/>
+|-|-|-|<br/>
+|\(当P点移动(t)\)||\((k,m)满足两个关系式\)<br>\((也就求得了k,m的范围或值)\)|<br/>
+|\(\Downarrow\)||\(\Uparrow\)  \(所有的(x_1, x_2)通过韦达定理换成(k,m)\)|<br/>
+|\(变化1:l_{PA}, l_{PB}移动(k_1,k_2)\)<br>\(变化2:直线l移动(k_{PM} 很容易用t表示)\)||\(\Uparrow\)|<br/>
+|\(\Downarrow\)||\(\Uparrow\)|<br/>
+|\(变化1:直线l_{AB}移动(x_1, x_2)\)||\(\Uparrow\)|<br/>
+|\(\Downarrow\)||\(\Uparrow\)|<br/>
+|\(点R移动(x_1, x_2), 满足:ROP三点共线\)<br>\(\Delta PAB面积变化(x_1, x_2, k, m), 满足:面积最大\)|\(\Rightarrow\)|\((x_1, x_2, k, m)满足两个关系式 \)|</p>
+
+<p>\(几何上看: 当P点移动(t)\Rightarrow \left\{\begin{matrix}<br/>
+l_{PA}, l_{PB}移动(k_1,k_2)\Rightarrow 直线l_{AB}移动(x_1, x_2)\\直线l移动(k_{PM} 很容易用t表示)<br/>
+\end{matrix}\right.\)<br/>
+\(几何上满足的条件: &quot;直线l_{AB}与直线l相互垂直&quot;\)<br/>
+\(代数上满足的条件: (x_1, x_2, t)满足一个关系式 \)<br/>
+\(\Rightarrow (k_1,k_2,t)满足一个关系式 \)<br/>
+\(\Rightarrow (t)满足一个关系式(也就求得了t的范围或值)\)</p>
+
+<p>\((\bigstar)目标:求垂直时的直线l方程, 也就是求t\)</p>
+
+<p>\({\color{Orange}{步骤2: 几何转代数....................}}\)<br/>
+\((\bigstar)几何:点A在切线PA上,点B在切线PB上 \rightarrow 代数:点代入直线方程\)<br/>
+\(把A点代入斜率为k_1切线方程k_1x-y-k_1x_0+t^2=0\)<br/>
+\(得:k_1x_1-x_1^2-k_1x_0+t^2=0\)<br/>
+\(即:x_1^2-k_1x_1+(k_1-t)t=0\)<br/>
+\(整理得:(x_1-t)(x_1-(k_1-t))=0\)<br/>
+\(得: x_1=k_1-t\)<br/>
+\(同理把B点代入斜率为k_2切线方程k_2x-y-k_2t+t^2=0\)<br/>
+\(得:x_2=k_2-t \)</p>
+
+<p>\((\bigstar)几何:过点与圆相切的直线 \rightarrow 代数:点线距离公式\)<br/>
+\(圆心(0,4)到切线kx-y-kt+t^2=0的距离刚好等于半径1\)<br/>
+\(\frac{k\times0-4-kt+t^2}{\sqrt{k^2+1}}=1\)<br/>
+\(整理得:(t^2-1)k^2+2<br/>
+t(4-t^2)k+(t^2-4)^2-1=0\)<br/>
+\(k_1, k_2正好是上述方程的两个解\)<br/>
+\(k_1+k_2=\frac{2<br/>
+t(t^2-4)}{t^2-1}\)<br/>
+\(k_1⋅k_2=\frac{(t^2-4)^2-1}{t^2-1}\)</p>
+
+<p>\((\bigstar)几何:两直线垂直 \rightarrow 代数:k_{PM}k_{AB}=-1\)</p>
+
+<p>\((\bigstar)几何:两点斜率 \rightarrow 代数:k_{AB}=\frac{x_1^2-x_2^2}{x_1-x_2},k_{PM}=\frac{x_1^2-4}{x_1-0} \)<br/>
+\(得:k_{AB}=x_1+x_2,k_{PM}=\frac{t^2-4}{t}\)</p>
+
+<p>\({\color{Green}{步骤3: 代入化简....................}}\)<br/>
+\(k_{PM}k_{AB}=-1\)<br/>
+\((x_1+x_2)(\frac{t^2-4}{t})=-1\)<br/>
+\((\bigstar)AB两点由斜率决定, 把x_1,x_2换成k_1,k_2\)<br/>
+\((k_1−t+k_2-t)(\frac{t^2-4}{t})=-1\)<br/>
+\((\bigstar)斜率由P点决定, 把k_1,k_2通过韦达定理换成t\)<br/>
+\((\frac{2<br/>
+t(t^2-4)}{t^2-1}-2t)(\frac{t^2-4}{t})=-1\)<br/>
+\(算得t=\pm \frac{\sqrt{115}}{5}\)</p>
+
+<p>\({\color{Blue}{步骤4: 结论....................}}\)<br/>
+\(\therefore P(\pm \frac{\sqrt{115}}{5},\frac{23}{5}), 结合点M(0,4)\)<br/>
+\(得直线l的方程为: y=\pm \frac{3\sqrt{115}}{115}x+4\)</p>
+
+<hr/>
+
+<hr/>
+
+<h2 id="toc_10">例题(2010年浙江高考 理科21题):</h2>
+
+<p>\(已知m&gt;1,直线l:x-my-\frac{m^2}{2}=0, 椭圆C:\frac{x^2}{m^2}+y^2=1,\)<br/>
+\(F_1,F_2分别是椭圆C的左,右两个焦点\)<br/>
+\((I)当直线l过右焦点F_2时,求直线l的方程\)<br/>
+\((II)设直线l与椭圆C交于A,B两点, \Delta AF_1F_2,\Delta BF_1F_2的重心分别为G,H\)<br/>
+\(若原点O在以线段GH为直径的圆内, 求实数m的取值范围\)<br/>
+<img src="quiver-image-url/FCBCC3804A5AB873A30ED695B249B48B.jpg%20=166x141" alt="IMAGE"/></p>
+
+<h2 id="toc_11">小蒋的解答(2019-03-24):</h2>
+
+<p>\((I)\)<br/>
+\({\color{DarkOrchid}{第1部分: abc关系....................}}\)<br/>
+\(c=\sqrt{a^2-b^2}=\sqrt{m^2-1} \)<br/>
+\(\therefore F_2的坐标为(\sqrt{m^2-1},0)\)<br/>
+\({\color{DarkOrchid}{第2部分: 直线过点....................}} \)<br/>
+\(将点F_2(\sqrt{m^2-1},0)代入直线x-my-\frac{m^2}{2}=0 \)<br/>
+\(\sqrt{m^2-1}-m \times 0-\frac{m^2}{2}\)<br/>
+\(得:m=\sqrt{2}\)</p>
+
+<p>\((II)\)<br/>
+\({\color{Red}{步骤1: 设点线,明确目标....................}}\)<br/>
+\((\bigstar)设A(x_1,y_1),B(x_2,y_2)\)<br/>
+\((\bigstar)直线l为x-my-\frac{m^2}{2}=0\)</p>
+
+<p>\((\bigstar)(\bigstar)(\bigstar)联动关系\)<br/>
+\(几何上看: m变化\Rightarrow AB两点移动(x_1,x_2)\Rightarrow 重心GH移动(x_G, x_H) \)<br/>
+\(几何上满足的条件: &quot;原点O在以线段GH为直径的圆&quot; \)<br/>
+\(代数上满足的条件: (x_G, x_H)满足一个关系式 \)<br/>
+\(\Rightarrow (x_1,x_2)满足一个关系式 \)<br/>
+\(\Rightarrow m满足一个关系式(也就是求得了m的范围或值)\)</p>
+
+<p>\((\bigstar)题目是求m\)</p>
+
+<p>\({\color{Orange}{步骤2: 几何转代数....................}}\)<br/>
+\((\bigstar)几何:A,B两点 \rightarrow 代数:需要联立方程, 消元, 韦达, \Delta\)<br/>
+\(联立: \left\{\begin{matrix}<br/>
+x-my-\frac{m^2}{2}=0\\\frac{x^2}{m^2}+y^2=1<br/>
+\end{matrix}\right. \)<br/>
+\(消元:x^2+(x-\frac{m^2}{2})^2-m^2=0\)<br/>
+\(化简:2x^2-m^2x+\frac{m^4}{4}-m^2=0\)</p>
+
+<p>\(x_1+x_2=\frac{m^2}{2}\)<br/>
+\(x_1⋅x_2=(\frac{m^4}{4}-m^2)/2\)<br/>
+\(令\Delta=(m^2)^2-4\times2(\frac{m^4}{4}-m^2)=-m^4+8m^2&gt;0\)<br/>
+\(得:m^2&lt;8\)</p>
+
+<p>\((\bigstar)几何:重心 \rightarrow 代数:三角形重心公式\)<br/>
+\(重心G的坐标为(\frac{x_1+x_{F_1}+x_{F_2}}{3},\frac{y_1+y_{F_1}+y_{F_2}}{3})=(\frac{x_1}{3},\frac{y_1}{3})\)<br/>
+\(重心H的坐标为(\frac{x_2+x_{F_1}+x_{F_2}}{3},\frac{y_2+y_{F_1}+y_{F_2}}{3})=(\frac{x_2}{3},\frac{y_2}{3})\)</p>
+
+<p>\((\bigstar)几何:原点O在以线段GH为直径的圆内\Leftrightarrow∠GOH为钝角 \rightarrow 代数: \overrightarrow{OG}⋅\overrightarrow{OH}&lt;0\)<br/>
+\(\overrightarrow{OG}=(\frac{x_1}{3},\frac{y_1}{3}), \overrightarrow{OH}=(\frac{x_2}{3},\frac{y_2}{3})\)<br/>
+\(\overrightarrow{OG}⋅\overrightarrow{OH}&lt;0,即\frac{x_1}{3}⋅\frac{x_2}{3}+\frac{y_1}{3}⋅\frac{y_2}{3}&lt;0\)<br/>
+\(得:x_1x_2+y_1y_2&lt;0\)</p>
+
+<p>\({\color{Green}{步骤3: 代入化简....................}}\)<br/>
+\(x_1x_2+y_1y_2 \)<br/>
+\((\bigstar)利用直线y=\frac{x}{m}-\frac{m}{2}代入\)<br/>
+\(=x_1x_2+(\frac{x_1}{m}-\frac{m}{2})(\frac{x_2}{m}-\frac{m}{2}) \)<br/>
+\(=(1+\frac{1}{m^2})x_1x_2+\frac{x_1+x_2}{2}+\frac{m^2}{4} \)<br/>
+\((\bigstar)利用韦达定理代入 \)<br/>
+\(=(1+\frac{1}{m^2})((\frac{m^4}{4}-m^2)/2)+\frac{\frac{m^2}{2}}{2}+\frac{m^2}{4} \)<br/>
+\(=\frac{1}{8}(m^2+1)(m^2-4)&lt;0 \)<br/>
+\(得:m^2&lt;4\)</p>
+
+<p>\({\color{Blue}{步骤4: 结论....................}}\)<br/>
+\(由m^2&lt;8,m^2&lt;4,以及题意m&gt;1\)<br/>
+\(最终得1&lt;m&lt;2\)</p>
+
+</div></body>
+
+</html>
