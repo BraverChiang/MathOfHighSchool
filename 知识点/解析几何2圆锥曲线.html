@@ -2,7 +2,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>解析几何3解析大题</title>
+<title>解析几何2圆锥曲线</title>
 <style>
 article,
 aside,
@@ -446,24 +446,21 @@ pre[class*="language-"].line-numbers > code {
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 <style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
-<p>解析几何3解析大题<br/>
-<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/%E8%A7%A3%E6%9E%90%E5%A4%A7%E9%A2%98%E4%BE%8B%E9%A2%98.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/%E8%A7%A3%E6%9E%90%E5%A4%A7%E9%A2%98%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98.html">高考真题</a></strong><br><br><br></p>
+<p>解析几何2圆锥曲线<br/>
+<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E4%BE%8B%E9%A2%98.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98.html">高考真题</a></strong><br><br><br></p>
 
 <ul>
 <li>
-<a href="#toc_0">写在前面: 关于解析几何大题目</a>
+<a href="#toc_0">写在前面: 关于圆锥曲线</a>
 </li>
 <li>
-<a href="#toc_1">步骤1: 设点, 设线, 明确目标, 分析联动关系</a>
+<a href="#toc_1">椭圆</a>
 </li>
 <li>
-<a href="#toc_2">步骤2: 几何转换为坐标</a>
+<a href="#toc_2">双曲线</a>
 </li>
 <li>
-<a href="#toc_3">步骤3: 代入化简</a>
-</li>
-<li>
-<a href="#toc_4">步骤4: 最后结论</a>
+<a href="#toc_3">抛物线</a>
 </li>
 </ul>
 
@@ -472,188 +469,76 @@ pre[class*="language-"].line-numbers > code {
 
 <hr/>
 
-<h2 id="toc_0">写在前面: 关于解析几何大题目</h2>
+<h2 id="toc_0">写在前面: 关于圆锥曲线</h2>
 
-<p><font color=#6ACCCB>解析几何的本质</font>: 当用<strong>几何方法</strong>无法解决<strong>几何问题</strong>的时候, 我们将所有的几何量(点, 距离, 角度)转化为坐标进行求解, 这个转化过程就叫做<strong>&quot;解析&quot;</strong></p>
+<p>有三类: 椭圆, 双曲线, 抛物线.</p>
 
-<p><font color=#6ACCCB>解析几何大题</font>: 解析几何几乎所有的大题, 都在算一个动态的过程. 也就是: 题目经常会有一个<strong>动点P</strong>, 或者<strong>动直线l</strong>, 但他们运动到某一个特殊位置的时候, 其他几何量会跟着联动, 题目会要求那些几何量满足某一个条件, 最后需要我们求出那个特殊位置.</p>
-
-<p>So, <font color=#6ACCCB>求解过程是非常规范的</font>: <br/>
-步骤1 (把最开始运动的 [几何] 设为 [坐标])<br/>
---&gt;步骤2 (把所有相关的 [几何] 都转化为 [坐标] )<br/>
---&gt;步骤3 ([坐标]化简, 即代入化简)<br/>
---&gt;步骤4 (得到题目最后的结论)</p>
-
-<p><br><br><br></p>
-
-<hr/>
-
-<h2 id="toc_1">步骤1: 设点, 设线, 明确目标, 分析联动关系</h2>
-
-<p><font color=#6ACCCB>设点</font></p>
+<p>为防止混乱, 下面两点我不在知识点描述, 同学们可以自己上网查阅</p>
 
 <ul>
-<li>一般情况下设直线与曲线的两个交点为\(A(x_1,y_1), B(x_2,y_2)\)</li>
-<li>曲线上的动点设为\(P(s,t)\)或者跟题目字母不从图的其他字母 (建议不要设成\((x_0,y_0)\), 因为手写很容易混淆)</li>
-</ul>
-
-<p><font color=#6ACCCB>设线</font></p>
-
-<ul>
-<li>通常设为斜截式\(y=kx+h\)</li>
-<li>如果是直线与开口为<strong>左右</strong>方向的抛物线, 最好设为\(x=my+n\)的形式</li>
-</ul>
-
-<p><font color=#6ACCCB>明确目标</font></p>
-
-<ul>
-<li>解析几何最后的问题通常可转化为求某一个参数的如\(k\)的值或者取值范围</li>
-</ul>
-
-<p><font color=#6ACCCB>分析联动关系</font></p>
-
-<ul>
-<li>此步骤不需要在试卷中写明, 但最好能写在草稿纸上, 小蒋例题中都会写上这个步骤</li>
+<li>不写焦点在\(y\)轴上的情况</li>
+<li>不写第二定义, 椭圆和双曲线焦点\((c,0)\)所对应的准线方程都是\(x=\frac{a^2}{c}\)</li>
 </ul>
 
 <p><br><br><br></p>
 
 <hr/>
 
-<h2 id="toc_2">步骤2: 几何转换为坐标</h2>
+<h2 id="toc_1">椭圆</h2>
 
-<table>
-<thead>
-<tr>
-<th>几何</th>
-<th>\(\xrightarrow[]{解析}\)</th>
-<th>坐标</th>
-</tr>
-</thead>
+<p><font color=#6ACCCB>椭圆定义</font>: 两条<font color=#6ACCCB>焦半径</font>之和为\(2a\)</p>
 
-<tbody>
-<tr>
-<td><font color=#6ACCCB>点</font></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>直线与曲线的两交点</td>
-<td>\(\rightarrow\)</td>
-<td>联立,消元,韦达,\(\Delta\)</td>
-</tr>
-<tr>
-<td>中点<br>平分</td>
-<td>\(\rightarrow\)</td>
-<td>中点坐标\((\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})\)<br><br>点差法:<br>\(\frac{x_1^2}{a^2}+\frac{y_1^2}{b^2}=1 (1式)\)<br>\(\frac{x_2^2}{a^2}+\frac{y_2^2}{b^2}=1 (2式)\)<br>两点代入曲线, 再相减\((1式)-(2式)\)</td>
-</tr>
-<tr>
-<td>重心</td>
-<td>\(\rightarrow\)</td>
-<td>重心坐标\((\frac{x_1+x_2+x_3}{3},\frac{y_1+y_2+y_3}{3})\)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><font color=#6ACCCB>角度/斜率</font></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>斜率</td>
-<td>\(\rightarrow\)</td>
-<td>两点斜率公式\(k=\frac{y_1-y_2}{x_1-x_2}\)</td>
-</tr>
-<tr>
-<td>曲线切线斜率</td>
-<td>\(\rightarrow\)</td>
-<td>求导公式\(k={y}&#39;\)</td>
-</tr>
-<tr>
-<td>锐角</td>
-<td>\(\rightarrow\)</td>
-<td>\(\overrightarrow{a}·\overrightarrow{b}&gt;0\) 或者 \(k=tan\theta&gt;0 \)</td>
-</tr>
-<tr>
-<td>钝角</td>
-<td>\(\rightarrow\)</td>
-<td>\(\overrightarrow{a}·\overrightarrow{b}&lt;0\) 或者 \(k=tan\theta&lt;0 \)</td>
-</tr>
-<tr>
-<td>垂直</td>
-<td>\(\rightarrow\)</td>
-<td>\(\overrightarrow{a}·\overrightarrow{b}=0\) 或者 \(k_1·k_2=-1 \)</td>
-</tr>
-<tr>
-<td>平行<br>三点共线</td>
-<td>\(\rightarrow\)</td>
-<td>\(\overrightarrow{a}=\lambda\overrightarrow{b}\) 或者 \(k_1=k_2\)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><font color=#6ACCCB>长度/距离</font></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>点线距离<br>三角形高线<br>圆心到弦长距离<br>圆心到切线距离</td>
-<td>\(\rightarrow\)</td>
-<td>设点为\((a,b)\), 直线一般式为\(Ax+By+C=0\)<br>点线距离公式\( d=\frac{ \|Aa+Bb+C\|}{\sqrt{A^2+B^2}} \)</td>
-</tr>
-<tr>
-<td>两点距离<br>三角形底边</td>
-<td>\(\rightarrow\)</td>
-<td>两点距离公式\( d=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2} \)<br>弦长公式\(\|AB\|=\sqrt{1^2+k^2}\|x_1-x_2\|=\sqrt{1^2+k^2}\frac{\Delta_{联立方程}}{a_{联立方程}}\)</td>
-</tr>
-<tr>
-<td>线段比例</td>
-<td>\(\rightarrow\)</td>
-<td>如果ABC在同一直线上: \(\frac{AB}{BC}=\|\frac{x_A-x_B}{x_B-x_C}\|\)</td>
-</tr>
-</tbody>
-</table>
+<p><font color=#6ACCCB>椭圆标准方程</font>: \(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1 \)</p>
+
+<p><font color=#6ACCCB>椭圆长轴</font>: \(2a\)<br/>
+<font color=#6ACCCB>椭圆短轴</font>: \(2b\)<br/>
+<font color=#6ACCCB>焦距</font>: \(2c\)<br/>
+<font color=#6ACCCB>焦点</font>: 左焦点\((-c,0)\), 右焦点\((c,0)\)</p>
+
+<p><font color=#6ACCCB>椭圆\(a,b,c\)关系</font>: \(a^2=c^2+b^2 \)<br/>
+<font color=#6ACCCB>椭圆离心率</font>: \(e=\frac{c}{a} \in (0,1)\), e越大, 椭圆越扁</p>
+
+<p><font color=#6ACCCB>椭圆通径</font>长度为: \(\frac{2b^2}{a}\)</p>
 
 <p><br><br><br></p>
 
 <hr/>
 
-<h2 id="toc_3">步骤3: 代入化简</h2>
+<h2 id="toc_2">双曲线</h2>
 
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
+<p><font color=#6ACCCB>双曲线定义</font>: 两条<font color=#6ACCCB>焦半径</font>之差的绝对值为\(2a\)</p>
 
-<tbody>
-<tr>
-<td>所有的\(y_1,y_2\)</td>
-<td>一般地, 通过&quot;直线/抛物线&quot;代入</td>
-<td>替换成 \(x_1,x_2\)</td>
-</tr>
-<tr>
-<td>所有的\(x_1,x_2\)</td>
-<td>一般地, 通过&quot;韦达定理&quot;代入</td>
-<td>替换成要求的参数, 如\(k,h\)</td>
-</tr>
-</tbody>
-</table>
+<p><font color=#6ACCCB>双曲线标准方程</font>: \(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1 \)</p>
+
+<p><font color=#6ACCCB>双曲线实轴</font>: \(2a\)<br/>
+<font color=#6ACCCB>双曲线虚轴</font>: \(2b\)<br/>
+<font color=#6ACCCB>焦距</font>: \(2c\)<br/>
+<font color=#6ACCCB>焦点</font>: 左焦点\((-c,0)\), 右焦点\((c,0)\)</p>
+
+<p><font color=#6ACCCB>双曲线\(a,b,c\)关系</font>: \(a^2=c^2-b^2 \)<br/>
+<font color=#6ACCCB>双曲线离心率</font>: \(e=\frac{c}{a} \in (1,+\infty )\), e越大, 双曲线开口越大</p>
+
+<p><font color=#6ACCCB>双曲线通径</font>长度为: \(\frac{2b^2}{a}\)</p>
+
+<p><font color=#6ACCCB>渐近线方程</font>: \(y=\pm\frac{b}{a}x\)<br/>
+<font color=#6ACCCB>焦点到渐近线距离</font>: \(b\) (同学们可自行证明)</p>
 
 <p><br><br><br></p>
 
 <hr/>
 
-<h2 id="toc_4">步骤4: 最后结论</h2>
+<h2 id="toc_3">抛物线</h2>
+
+<p><font color=#6ACCCB>抛物线定义</font>: 设\(P\)是抛物线上的动点, <font color=#6ACCCB>\(P\)到焦点的距离</font> = <font color=#6ACCCB>\(P\)到准线的距离</font></p>
+
+<p><font color=#6ACCCB>抛物线标准方程</font>: \(y^2=2px\)</p>
+
+<p><font color=#6ACCCB>抛物线焦点</font>: \((\frac{p}{2},0)\)<br/>
+<font color=#6ACCCB>抛物线准线方程</font>: \(x=-\frac{p}{2}\)</p>
+
+<p><font color=#6ACCCB>焦点到准线的距离</font>: \(p\)</p>
+
+<p><font color=#6ACCCB>双曲线通径</font>长度为: \(2p\)</p>
 
 </div></body>
 
