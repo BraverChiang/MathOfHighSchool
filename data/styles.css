@@ -10,16 +10,6 @@
   line-height:normal;
   text-transform:none;
 }
-.box_1 {
-}
-.box_2 {
-}
-.ellipse {
-}
-.shape {
-}
-.image {
-}
 .heading_1 {
   font-family:'ArialMT', 'Arial';
   font-weight:bold;
@@ -69,8 +59,10 @@
 }
 .form_disabled {
 }
-.flow_shape {
+.box_2 {
 }
-.connector {
+.box_1 {
+}
+.image {
 }
 textarea, select, input, button { outline: none; }
