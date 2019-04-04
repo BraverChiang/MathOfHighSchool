@@ -4,11 +4,26 @@
 }
 
 
+.row [class^="col-xl"]{
+	background-color: rgba(51, 170, 51, 0.05);
+	padding: 0px;
+}
+
+.row [class^="col-lg"]{
+	background-color: rgba(51, 170, 51, 0.05);
+	padding: 0px;
+}
 
 .row [class^="col-md"]{
 	background-color: rgba(51, 170, 51, 0.05);
 	padding: 0px;
 }
+
+.row [class^="col-sm"]{
+	background-color: rgba(51, 170, 51, 0.05);
+	padding: 0px;
+}
+
 
 
 .row [class^="col-md-12"]{
