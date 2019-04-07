@@ -2,7 +2,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>基础2不等式</title>
+<title>函数2函数性质</title>
 <style>
 article,
 aside,
@@ -444,23 +444,15 @@ pre[class*="language-"].line-numbers > code {
 
 
 </style>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+
 <style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
-<p>基础2不等式<br/>
-<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%9F%BA%E7%A1%80/%E4%B8%8D%E7%AD%89%E5%BC%8F%E4%BE%8B%E9%A2%98.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%9F%BA%E7%A1%80/%E4%B8%8D%E7%AD%89%E5%BC%8F%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98.html">高考真题</a></strong><br><br><br></p>
+<p>函数2函数性质</p>
+
+<p><br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E6%80%A7%E8%B4%A8%E4%BE%8B%E9%A2%98.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E6%80%A7%E8%B4%A8%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98.html">高考真题</a></strong><br><br><br></p>
 
 <ul>
 <li>
-<a href="#toc_0">写在前面: 关于不等式</a>
-</li>
-<li>
-<a href="#toc_1">初中的不等式</a>
-</li>
-<li>
-<a href="#toc_2">高中的不等式</a>
-</li>
-<li>
-<a href="#toc_3">柯西不等式</a>
+<a href="#toc_0">写在前面: 关于函数性质</a>
 </li>
 </ul>
 
@@ -469,68 +461,184 @@ pre[class*="language-"].line-numbers > code {
 
 <hr/>
 
-<h2 id="toc_0">写在前面: 关于不等式</h2>
+<h2 id="toc_0">写在前面: 关于函数性质</h2>
 
 <ul>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 柯西不等式</li>
-<li>可以很简单, 也可以特别难</li>
-<li>两个变量, 甚至更多, 但是变量具有等效性</li>
+<li>每一个函数都有它的基本性质, 一般从定义域,值域,单调性,奇偶性,周期性研究. 还有一些特殊点, 如零点, 与轴的焦点, 一些特殊线, 如渐近线.</li>
 </ul>
 
-<p><br><br><br></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>解析式图像</th>
+<th>定义域</th>
+<th>值域</th>
+<th>单调性</th>
+<th>奇偶性</th>
+<th>周期性</th>
+<th>点</th>
+<th>线</th>
+</tr>
+</thead>
 
-<hr/>
-
-<h2 id="toc_1">初中的不等式</h2>
-
-<p><font color=#6ACCCB><strong>初中几个基础的恒等式</strong></font>: <br/>
-\((a+b)^2=a^2+2ab+b^2\)<br/>
-\((a-b)^2=a^2-2ab+b^2\)<br/>
-\(a^2-b^2=(a+b)(a-b)\)</p>
-
-<p><font color=#6ACCCB><strong>相反数不等式</strong></font>: 如果\(a&gt;b\), 那么\(-a&lt;-b\)</p>
-
-<p><font color=#6ACCCB><strong>倒数不等式</strong></font>: 如果\(a&gt;b&gt;0\), 那么\(\frac{1}{a}&lt;\frac{1}{b}\)</p>
-
-<p><br><br><br></p>
-
-<hr/>
-
-<h2 id="toc_2">高中的不等式</h2>
-
-<p><font color=#6ACCCB><strong>分式不等式</strong></font>: 如果\(\frac{a}{b}&gt;0\), 那么\(ab&gt;0\)</p>
-
-<p><font color=#6ACCCB><strong>二次不等式</strong></font>: 当二次项系数大于0时, &quot;大于0取两边, 小于0取中间&quot;</p>
-
-<p><font color=#EEDABE>例子: 求解不等式\(\frac{1}{2-x}&lt;3\)</font>:</p>
-
-<p><font color=#6ACCCB><strong>基本不等式</strong></font>:<br/>
-前提: \(a&gt;0, b&gt;0\). </p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数积</strong></font>:<br/>
-\(a+b\ge2\sqrt{ab}\)</p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数平方和</strong></font>:<br/>
-\((a+b)^2\le2(a^2+b^2)\)</p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数倒数和</strong></font>:<br/>
-\((a+b)(\frac{1}{a}+\frac{1}{b})\ge4\)<br/>
-<font color=#579090>推导过程如下:<br/>
-\((a+b)(\frac{1}{a}+\frac{1}{b})\)<br/>
-\(=\frac{b}{a}+\frac{a}{b}+2\)<br/>
-\(\ge2\sqrt{\frac{b}{a}·\frac{a}{b}}+2=4\)<br/>
-</font></p>
-
-<p><font color=#6ACCCB><strong>两数关系合在一起写</strong></font>:<br/>
-\(\sqrt{\frac{a^2+b^2}{2}}\ge \frac{a+b}{2}\ge \sqrt{ab}\ge \frac{2}{\frac{1}{a}+\frac{1}{b}}\)</p>
-
-<p>结论: 当且仅当a=b时, 取到等号</p>
-
-<p><br><br><br></p>
-
-<hr/>
-
-<h2 id="toc_3">柯西不等式</h2>
+<tbody>
+<tr>
+<td>一次</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>二次</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>反比例</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>对勾</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>根式</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>指数</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>对数</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>三角函数</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>复合</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>分段</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>绝对值</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>抽象</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>参数</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 </div></body>
 

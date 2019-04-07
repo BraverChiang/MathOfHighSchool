@@ -2,7 +2,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>基础2不等式</title>
+<title>三角函数1单位圆</title>
 <style>
 article,
 aside,
@@ -446,21 +446,21 @@ pre[class*="language-"].line-numbers > code {
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 <style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
-<p>基础2不等式<br/>
-<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%9F%BA%E7%A1%80/%E4%B8%8D%E7%AD%89%E5%BC%8F%E4%BE%8B%E9%A2%98.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%9F%BA%E7%A1%80/%E4%B8%8D%E7%AD%89%E5%BC%8F%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98.html">高考真题</a></strong><br><br><br></p>
+<p>三角函数1单位圆<br/>
+<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/%E5%8D%95%E4%BD%8D%E5%9C%86%E4%BE%8B%E9%A2%98.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/%E5%8D%95%E4%BD%8D%E5%9C%86%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98.html">高考真题</a></strong><br><br><br></p>
 
 <ul>
 <li>
-<a href="#toc_0">写在前面: 关于不等式</a>
+<a href="#toc_0">写在前面: 关于单位圆</a>
 </li>
 <li>
-<a href="#toc_1">初中的不等式</a>
+<a href="#toc_1">任意角, 弧度制</a>
 </li>
 <li>
-<a href="#toc_2">高中的不等式</a>
+<a href="#toc_2">单位圆, sinθ, cosθ, 基本公式</a>
 </li>
 <li>
-<a href="#toc_3">柯西不等式</a>
+<a href="#toc_3">特殊角</a>
 </li>
 </ul>
 
@@ -469,68 +469,155 @@ pre[class*="language-"].line-numbers > code {
 
 <hr/>
 
-<h2 id="toc_0">写在前面: 关于不等式</h2>
+<h2 id="toc_0">写在前面: 关于单位圆</h2>
 
 <ul>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 柯西不等式</li>
-<li>可以很简单, 也可以特别难</li>
-<li>两个变量, 甚至更多, 但是变量具有等效性</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 🏝一个单位圆, 一个正弦, 一个余弦, 一个正切</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 🏝梅花阵
+<br><br><br></li>
 </ul>
 
+<hr/>
+
+<h2 id="toc_1">任意角, 弧度制</h2>
+
+<p>数学中规定, 在平面上: <br/>
+逆时针方向转为 <font color=#6ACCCB><strong>🔄正转</strong></font><br/>
+顺时针方向转为 <strong>倒转</strong></p>
+<font color=orange>
+<p>几乎绝大部分生活在的角度运动都规定: 🔄为正方向<br/>
+<em>例如: 跑道跑一圈, F1赛车, 发牌</em><br/>
+</font> </p>
+
+<p>定义: <font color=#6ACCCB><strong>弧度</strong></font> = \(\frac{弧长}{半径}\)</p>
+
+<table>
+<thead>
+<tr>
+<th>幼儿园<br>(单位: 圈)</th>
+<th>小学初中<br>(单位: 度)</th>
+<th>高中大学<br>(单位: 弧度)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1圈</td>
+<td>\(360°\)</td>
+<td>\(2π\)</td>
+</tr>
+<tr>
+<td>2圈</td>
+<td>\(720°\)</td>
+<td>\(4π\)</td>
+</tr>
+<tr>
+<td>0.5圈</td>
+<td>\(180°\)</td>
+<td>\(π\)</td>
+</tr>
+<tr>
+<td>倒转 1圈</td>
+<td>倒转 \(360°\)</td>
+<td>\(-2π\)</td>
+</tr>
+<tr>
+<td>倒转 2圈</td>
+<td>倒转 \(720°\)</td>
+<td>\(-4π\)</td>
+</tr>
+<tr>
+<td>倒转 0.5圈</td>
+<td>倒转 \(180°\)</td>
+<td>\(-π\)</td>
+</tr>
+</tbody>
+</table>
+
 <p><br><br><br></p>
 
 <hr/>
 
-<h2 id="toc_1">初中的不等式</h2>
+<h2 id="toc_2">单位圆, sinθ, cosθ, 基本公式</h2>
 
-<p><font color=#6ACCCB><strong>初中几个基础的恒等式</strong></font>: <br/>
-\((a+b)^2=a^2+2ab+b^2\)<br/>
-\((a-b)^2=a^2-2ab+b^2\)<br/>
-\(a^2-b^2=(a+b)(a-b)\)</p>
+<p>定义: <font color=#6ACCCB><strong>sinθ</strong></font>表示竖直方向上的有向线段🏝<br/>
+定义: <font color=#6ACCCB><strong>cosθ</strong></font>表示水平方向上的有向线段🏝</p>
 
-<p><font color=#6ACCCB><strong>相反数不等式</strong></font>: 如果\(a&gt;b\), 那么\(-a&lt;-b\)</p>
+<p><font color=#6ACCCB><strong>始边</strong></font>: 原点出发往x轴正向的射线<br/>
+<font color=#6ACCCB><strong>终边</strong></font>: 原点出发往经过单位圆动点的射线</p>
 
-<p><font color=#6ACCCB><strong>倒数不等式</strong></font>: 如果\(a&gt;b&gt;0\), 那么\(\frac{1}{a}&lt;\frac{1}{b}\)</p>
+<p><font color=#6ACCCB><strong>象限</strong></font>: 第一象限, 第二象限, 第三象限, 第四象限<br/>
+<font color=orange><br/>
+<em>地铁出口站顺序也是这样的</em><br/>
+</font> </p>
 
-<p><br><br><br></p>
+<p>根据定义: \(tanθ=\frac{sinθ}{cosθ}\)<br/>
+根据勾股定理: \(sin^2θ+cos^2θ=1\)<br/>
+已知\(θ, sinθ, cosθ, tanθ\)其中一个, 可以通过\(Rt\Delta\)求出其他三个.</p>
 
-<hr/>
-
-<h2 id="toc_2">高中的不等式</h2>
-
-<p><font color=#6ACCCB><strong>分式不等式</strong></font>: 如果\(\frac{a}{b}&gt;0\), 那么\(ab&gt;0\)</p>
-
-<p><font color=#6ACCCB><strong>二次不等式</strong></font>: 当二次项系数大于0时, &quot;大于0取两边, 小于0取中间&quot;</p>
-
-<p><font color=#EEDABE>例子: 求解不等式\(\frac{1}{2-x}&lt;3\)</font>:</p>
-
-<p><font color=#6ACCCB><strong>基本不等式</strong></font>:<br/>
-前提: \(a&gt;0, b&gt;0\). </p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数积</strong></font>:<br/>
-\(a+b\ge2\sqrt{ab}\)</p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数平方和</strong></font>:<br/>
-\((a+b)^2\le2(a^2+b^2)\)</p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数倒数和</strong></font>:<br/>
-\((a+b)(\frac{1}{a}+\frac{1}{b})\ge4\)<br/>
-<font color=#579090>推导过程如下:<br/>
-\((a+b)(\frac{1}{a}+\frac{1}{b})\)<br/>
-\(=\frac{b}{a}+\frac{a}{b}+2\)<br/>
-\(\ge2\sqrt{\frac{b}{a}·\frac{a}{b}}+2=4\)<br/>
-</font></p>
-
-<p><font color=#6ACCCB><strong>两数关系合在一起写</strong></font>:<br/>
-\(\sqrt{\frac{a^2+b^2}{2}}\ge \frac{a+b}{2}\ge \sqrt{ab}\ge \frac{2}{\frac{1}{a}+\frac{1}{b}}\)</p>
-
-<p>结论: 当且仅当a=b时, 取到等号</p>
+<p><font color=#6ACCCB><strong>梅花阵</strong></font>: 辅助记忆基础公式🏝</p>
 
 <p><br><br><br></p>
 
 <hr/>
 
-<h2 id="toc_3">柯西不等式</h2>
+<h2 id="toc_3">特殊角</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>x<br>正<br>半<br>轴</th>
+<th>一<br>象<br>限</th>
+<th>一<br>象<br>限</th>
+<th>一<br>象<br>限</th>
+<th>y<br>正<br>半<br>轴</th>
+<th>二<br>象<br>限</th>
+<th>二<br>象<br>限</th>
+<th>二<br>象<br>限</th>
+<th>x<br>负<br>半<br>轴</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>角度 (单位弧度)<br>\(θ\)</td>
+<td>\(0\)</td>
+<td>\(\frac{1}{6}π\)</td>
+<td>\(\frac{1}{4}π\)</td>
+<td>\(\frac{1}{3}π\)</td>
+<td>\(\frac{1}{2}π\)</td>
+<td>\(\frac{2}{3}π\)</td>
+<td>\(\frac{3}{4}π\)</td>
+<td>\(\frac{5}{6}π\)</td>
+<td>\(π\)</td>
+</tr>
+<tr>
+<td>正弦值<br>\(sinθ\)</td>
+<td>\(0\)</td>
+<td>\(\frac{1}{2}\)</td>
+<td>\(\frac{\sqrt2}{2}\)</td>
+<td>\(\frac{\sqrt3}{2}\)</td>
+<td>\(1\)</td>
+<td>\(\frac{\sqrt3}{2}\)</td>
+<td>\(\frac{\sqrt2}{2}\)</td>
+<td>\(\frac{1}{2}\)</td>
+<td>\(0\)</td>
+</tr>
+<tr>
+<td>余弦值<br>\(cosθ\)</td>
+<td>\(1\)</td>
+<td>\(\frac{\sqrt3}{2}\)</td>
+<td>\(\frac{\sqrt2}{2}\)</td>
+<td>\(\frac{1}{2}\)</td>
+<td>\(0\)</td>
+<td>\(-\frac{1}{2}\)</td>
+<td>\(-\frac{\sqrt2}{2}\)</td>
+<td>\(-\frac{\sqrt3}{2}\)</td>
+<td>\(-1\)</td>
+</tr>
+</tbody>
+</table>
 
 </div></body>
 

@@ -2,7 +2,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>基础2不等式</title>
+<title>向量</title>
 <style>
 article,
 aside,
@@ -446,21 +446,18 @@ pre[class*="language-"].line-numbers > code {
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 <style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
-<p>基础2不等式<br/>
-<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%9F%BA%E7%A1%80/%E4%B8%8D%E7%AD%89%E5%BC%8F%E4%BE%8B%E9%A2%98.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%9F%BA%E7%A1%80/%E4%B8%8D%E7%AD%89%E5%BC%8F%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98.html">高考真题</a></strong><br><br><br></p>
+<p>向量<br/>
+<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%90%91%E9%87%8F">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E5%90%91%E9%87%8F">高考真题</a></strong><br><br><br></p>
 
 <ul>
 <li>
-<a href="#toc_0">写在前面: 关于不等式</a>
+<a href="#toc_0">写在前面: 关于平面向量</a>
 </li>
 <li>
-<a href="#toc_1">初中的不等式</a>
+<a href="#toc_1">向量运算, 长度角度, 垂直平行</a>
 </li>
 <li>
-<a href="#toc_2">高中的不等式</a>
-</li>
-<li>
-<a href="#toc_3">柯西不等式</a>
+<a href="#toc_2">基底坐标</a>
 </li>
 </ul>
 
@@ -469,68 +466,140 @@ pre[class*="language-"].line-numbers > code {
 
 <hr/>
 
-<h2 id="toc_0">写在前面: 关于不等式</h2>
+<h2 id="toc_0">写在前面: 关于平面向量</h2>
 
 <ul>
-<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 柯西不等式</li>
-<li>可以很简单, 也可以特别难</li>
-<li>两个变量, 甚至更多, 但是变量具有等效性</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 🏝加减</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 🏝数乘(平行)</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 🏝数量积(垂直)</li>
+<li>第一种表示: 往那个方向(手指北偏东53°), 走5公里就到了</li>
+<li>第二种表示: 往东走4公里, 再往北走3公里. 放入坐标就是\((4,3)\)</li>
 </ul>
 
 <p><br><br><br></p>
 
 <hr/>
 
-<h2 id="toc_1">初中的不等式</h2>
+<h2 id="toc_1">向量运算, 长度角度, 垂直平行</h2>
 
-<p><font color=#6ACCCB><strong>初中几个基础的恒等式</strong></font>: <br/>
-\((a+b)^2=a^2+2ab+b^2\)<br/>
-\((a-b)^2=a^2-2ab+b^2\)<br/>
-\(a^2-b^2=(a+b)(a-b)\)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>代数</th>
+<th>几何</th>
+<th>坐标/解析</th>
+</tr>
+</thead>
 
-<p><font color=#6ACCCB><strong>相反数不等式</strong></font>: 如果\(a&gt;b\), 那么\(-a&lt;-b\)</p>
-
-<p><font color=#6ACCCB><strong>倒数不等式</strong></font>: 如果\(a&gt;b&gt;0\), 那么\(\frac{1}{a}&lt;\frac{1}{b}\)</p>
+<tbody>
+<tr>
+<td>向量</td>
+<td>\(\overrightarrow{a}\)<br><br>\(\overrightarrow{b}\)</td>
+<td>一个有向线段</td>
+<td>\((x_1,y_1)\)<br><br>\((x_2,y_2)\)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><font color=#6ACCCB>运算</font></td>
+<td>交换律, 分配律</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>加减</td>
+<td>\(\overrightarrow{a}\) + \(\overrightarrow{b}\)</td>
+<td>平行四边形法则</td>
+<td>\((x_1+x_2,y_1+y_2)\)</td>
+</tr>
+<tr>
+<td>数乘</td>
+<td>\(\lambda\overrightarrow{a}\)</td>
+<td>同向或反向</td>
+<td>\((\lambda x_1,\lambda y_1)\)</td>
+</tr>
+<tr>
+<td>数量积<br>(点乘)</td>
+<td>\(\overrightarrow{a}·\overrightarrow{b}\)<br>\( = ⏐\overrightarrow{a}⏐·⏐\overrightarrow{b}⏐·cos\theta \)<br>设\(\theta\)为两个向量的夹角</td>
+<td>投影法则</td>
+<td>\(x_1x_2+y_1y_2\)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><font color=#6ACCCB>长度角度</font></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>长度, 模</td>
+<td>\(⏐\overrightarrow{a}⏐\)</td>
+<td>长度</td>
+<td>\(\sqrt{x_1^2+y_1^2}\)</td>
+</tr>
+<tr>
+<td>角度, 夹角</td>
+<td>\(\theta=&lt;\overrightarrow{a}, \overrightarrow{b}&gt;\)</td>
+<td>尾巴贴一起</td>
+<td>\(cos\theta=\frac{x_1x_2+y_1y_2}{\sqrt{x_1^2+y_1^2}\sqrt{x_2^2+y_2^2}}\)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><font color=#6ACCCB>垂直平行</font></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>垂直</td>
+<td>\(\overrightarrow{a}\perp\overrightarrow{b}\)</td>
+<td>垂直</td>
+<td>\(x_1x_2+y_1y_2=0\)</td>
+</tr>
+<tr>
+<td>平行, 共线</td>
+<td>\(\overrightarrow{a}\parallel\overrightarrow{b}\)</td>
+<td>平行或重合</td>
+<td>\(x_1y_2=x_2y_1\)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><font color=#6ACCCB>解题技巧</font></td>
+<td>分解法,平方法</td>
+<td>几何作图法</td>
+<td>坐标法</td>
+</tr>
+</tbody>
+</table>
 
 <p><br><br><br></p>
 
 <hr/>
 
-<h2 id="toc_2">高中的不等式</h2>
+<h2 id="toc_2">基底坐标</h2>
 
-<p><font color=#6ACCCB><strong>分式不等式</strong></font>: 如果\(\frac{a}{b}&gt;0\), 那么\(ab&gt;0\)</p>
-
-<p><font color=#6ACCCB><strong>二次不等式</strong></font>: 当二次项系数大于0时, &quot;大于0取两边, 小于0取中间&quot;</p>
-
-<p><font color=#EEDABE>例子: 求解不等式\(\frac{1}{2-x}&lt;3\)</font>:</p>
-
-<p><font color=#6ACCCB><strong>基本不等式</strong></font>:<br/>
-前提: \(a&gt;0, b&gt;0\). </p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数积</strong></font>:<br/>
-\(a+b\ge2\sqrt{ab}\)</p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数平方和</strong></font>:<br/>
-\((a+b)^2\le2(a^2+b^2)\)</p>
-
-<p><font color=#6ACCCB><strong>两数和&amp;两数倒数和</strong></font>:<br/>
-\((a+b)(\frac{1}{a}+\frac{1}{b})\ge4\)<br/>
-<font color=#579090>推导过程如下:<br/>
-\((a+b)(\frac{1}{a}+\frac{1}{b})\)<br/>
-\(=\frac{b}{a}+\frac{a}{b}+2\)<br/>
-\(\ge2\sqrt{\frac{b}{a}·\frac{a}{b}}+2=4\)<br/>
-</font></p>
-
-<p><font color=#6ACCCB><strong>两数关系合在一起写</strong></font>:<br/>
-\(\sqrt{\frac{a^2+b^2}{2}}\ge \frac{a+b}{2}\ge \sqrt{ab}\ge \frac{2}{\frac{1}{a}+\frac{1}{b}}\)</p>
-
-<p>结论: 当且仅当a=b时, 取到等号</p>
-
-<p><br><br><br></p>
-
-<hr/>
-
-<h2 id="toc_3">柯西不等式</h2>
+<p>两个不平行的非零向量\(\overrightarrow{OA}\)和\(\overrightarrow{OB}\), 向量\(\overrightarrow{OP}\)=\(\lambda\overrightarrow{OA}\)+\(\mu\overrightarrow{OB}\).则有<br/>
+\[\lambda+\mu \Leftrightarrow P, A, B三点共线\]</p>
 
 </div></body>
 
