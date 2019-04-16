@@ -23,7 +23,7 @@ $(document).ready(function () {
 		window.location = "https://xiaojiang.tk/知识点/开篇5复数.html"
 	});
 	
-	$("#复数").click(function () {
+	$("#初中").click(function () {
 		window.location = "https://xiaojiang.tk/知识点/开篇6初中.html"
 	});
 	
