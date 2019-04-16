@@ -2,7 +2,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>三角函数4解三角</title>
+<title>向量2空间向量</title>
 <style>
 article,
 aside,
@@ -474,24 +474,15 @@ pre[class*="language-"].line-numbers > code {
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 <style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
-<p>三角函数4解三角<br/>
-<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E4%BE%8B%E9%A2%98/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B04%E8%A7%A3%E4%B8%89%E8%A7%92.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B04%E8%A7%A3%E4%B8%89%E8%A7%92.html">高考真题</a></strong><br><br><br></p>
+<p>向量2空间向量<br/>
+<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E4%BE%8B%E9%A2%98/%E5%90%91%E9%87%8F2%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98/%E5%90%91%E9%87%8F2%E7%A9%BA%E9%97%B4%E5%90%91%E9%87%8F.html">高考真题</a></strong><br><br><br></p>
 
 <ul>
 <li>
-<a href="#toc_0">写在前面: 关于解三角</a>
+<a href="#toc_0">写在前面: 关于空间向量</a>
 </li>
 <li>
-<a href="#toc_1">正弦定理</a>
-</li>
-<li>
-<a href="#toc_2">余弦定理</a>
-</li>
-<li>
-<a href="#toc_3">面积公式</a>
-</li>
-<li>
-<a href="#toc_4">换角公式</a>
+<a href="#toc_1">空间向量</a>
 </li>
 </ul>
 
@@ -500,86 +491,115 @@ pre[class*="language-"].line-numbers > code {
 
 <hr/>
 
-<h2 id="toc_0">写在前面: 关于解三角</h2>
+<h2 id="toc_0">写在前面: 关于空间向量</h2>
 
 <ul>
-<li>知识点中为了防止容易, 我只写了角A的情况, 角B, 角C的形态几乎一摸一样, 同学们可自己写出.</li>
-</ul>
-
-<p>解三角形, 就是求出三角形的三个边, 三个角, 以及面积</p>
-
-<ul>
-<li>三角形是最基础的图形, 所以解三角形在几何学中有特别重要和基础的位置, 其中的余弦定理就涵盖了勾股定理.</li>
-<li>求三角形面积也是古代社会的一个重要问题 </li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> </li>
 </ul>
 
 <p><br><br><br></p>
 
 <hr/>
 
-<h2 id="toc_1">正弦定理</h2>
+<h2 id="toc_1">空间向量</h2>
 
-<p><font color=#6ACCCB><strong>正弦定理</strong></font>: \(\frac{a}{sinA}=\frac{b}{sinB}=\frac{c}{sinC}=2R, 其中R是外接圆半径\)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>代数</th>
+<th>几何</th>
+<th>三维坐标</th>
+</tr>
+</thead>
 
-<p><font color=#6ACCCB><strong>正弦定理的证明</strong></font>: 正弦定理怎么来的<br/>
-画一个外接圆即可证明. 同学们可自己证明.</p>
-
-<p><font color=#6ACCCB><strong>正弦定理的使用</strong></font>: 正弦定理在什么情况下使用<br/>
-<strong>看到</strong> 对边对角已知<br/>
-<strong>看到</strong> 两角已知<br/>
-<strong>看到</strong> 形如\((\sqrt{3}b-c)cosA=a cosC\)<br/>
-<strong>看到</strong> 形如\(\frac{cosA}{cosC}=\frac{a}{\sqrt{3}b-c}\)<br/>
-都需要 <strong>脑补</strong> 正弦定理, 把边换成角</p>
-
-<p><br><br><br></p>
-
-<hr/>
-
-<h2 id="toc_2">余弦定理</h2>
-
-<p><font color=#6ACCCB><strong>余弦定理</strong></font>: \(cosA=\frac{b^2+c^2-a^2}{2bc}\), </p>
-
-<p><font color=#6ACCCB><strong>勾股定理</strong></font>: <br/>
-\(如果角A=\frac{π}{2}\)<br/>
-\(则左边cosA=0 \)<br/>
-\(则右边=0\)<br/>
-\(则b^2+c^2-a^2=0\)<br/>
-\(则b^2+c^2=a^2\)</p>
-
-<p><font color=#6ACCCB><strong>余弦定理的证明</strong></font>: 余弦定理怎么来的<br/>
-作条高线即可证明, 同学们可自己证明.</p>
-
-<p><font color=#6ACCCB><strong>余弦定理的使用</strong></font>: 余弦定理在什么情况下使用<br/>
-<strong>看到</strong> 已知两边一夹角<br/>
-<strong>看到</strong> 已知三边<br/>
-<strong>看到</strong> 已知某个角<br/>
-<strong>看到</strong> 形如\(b^2+c^2=a^2+bc\)<br/>
-都需要 <strong>脑补</strong> 余弦定理</p>
-
-<p><br><br><br></p>
-
-<hr/>
-
-<h2 id="toc_3">面积公式</h2>
-
-<p><font color=#6ACCCB><strong>面积公式</strong></font>: \(S_\Delta=\frac{1}{2}bc·sinA\)</p>
-
-<p><font color=#6ACCCB><strong>面积公式的证明</strong></font>: 面积公式怎么来的<br/>
-作条高线即可证明, 同学们可自己证明.</p>
-
-<p><br><br><br></p>
-
-<hr/>
-
-<h2 id="toc_4">换角公式</h2>
-
-<p><font color=#6ACCCB><strong>换角公式</strong></font>: <br/>
-\(sin(B+C)=sinA\)<br/>
-\(cos(B+C)=-cosA\)<br/>
-一般已知角B, 或者角C的时候使用.</p>
-
-<p><font color=#6ACCCB><strong>换角公式的证明</strong></font>: <br/>
-用诱导公式即可证明\(sinA=sin(π-A)=sin(B+C)\), 证明完毕, 余弦类似方法, 同学们可自行证明.</p>
+<tbody>
+<tr>
+<td>向量</td>
+<td>\(\overrightarrow{a}\)<br><br>\(\overrightarrow{b}\)</td>
+<td>一个有向线段</td>
+<td>\((x_1,y_1,z_1)\)<br><br>\((x_2,y_2,z_2)\)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><font color=#6ACCCB>运算</font></td>
+<td>交换律, 分配律</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>加减</td>
+<td>\(\overrightarrow{a}\) + \(\overrightarrow{b}\)</td>
+<td>平行四边形法则</td>
+<td>\((x_1+x_2,y_1+y_2,z_1+z_2)\)</td>
+</tr>
+<tr>
+<td>数乘</td>
+<td>\(\lambda\overrightarrow{a}\)</td>
+<td>同向或反向</td>
+<td>\(( λx_1,λy_1, λz_1)\)</td>
+</tr>
+<tr>
+<td>数量积<br>(点乘)</td>
+<td>\(\overrightarrow{a}·\overrightarrow{b}\)<br>\( = ⏐\overrightarrow{a}⏐·⏐\overrightarrow{b}⏐·cos\theta \)<br>设\(\theta\)为两个向量的夹角</td>
+<td>投影法则</td>
+<td>\(x_1x_2+y_1y_2+z_1z_2\)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><font color=#6ACCCB>长度角度</font></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>长度, 模</td>
+<td>\(⏐\overrightarrow{a}⏐\)</td>
+<td>长度</td>
+<td>\(\sqrt{x_1^2+y_1^2+z_1^2}\)</td>
+</tr>
+<tr>
+<td>角度, 夹角</td>
+<td>\(\theta=&lt;\overrightarrow{a}, \overrightarrow{b}&gt;\)</td>
+<td>尾巴贴一起</td>
+<td>\(cos\theta=\frac{x_1x_2+y_1y_2+z_1z_2}{\sqrt{x_1^2+y_1^2+z_1^2}\sqrt{x_2^2+y_2^2+z_2^2}}\)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><font color=#6ACCCB>垂直平行</font></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>垂直</td>
+<td>\(\overrightarrow{a}\perp\overrightarrow{b}\)</td>
+<td>垂直</td>
+<td>\(x_1x_2+y_1y_2+z_1z_2=0\)</td>
+</tr>
+<tr>
+<td>平行, 共线</td>
+<td>\(\overrightarrow{a}\parallel\overrightarrow{b}\)</td>
+<td>平行或重合</td>
+<td>\((x_1,y_1,z_1)=λ(x_2,y_2,z_2)\)</td>
+</tr>
+</tbody>
+</table>
 
 </div></body>
 

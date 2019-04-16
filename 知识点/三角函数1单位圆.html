@@ -165,7 +165,6 @@ table {
 }
 html {
   font-family: 'PT Sans', sans-serif;
-  
 }
 pre,
 code {
@@ -181,49 +180,50 @@ h6 {
   font-weight: 700;line-height: 1.1em;
 }
 html {
-  background-color: #2D2D2D;
-  color: #fff;
+  
+  color: #657b83;
   margin: 1em;
 }
 body {
-  background-color: #2D2D2D;color: #fff;
+  
+  color: #555;
   margin: 0 auto;
   max-width: 23cm;
   padding: 1em;
 }
-.markdown-body {font-family: 'PT Sans', sans-serif; background-color: #2D2D2D;color: #fff;}
+
 code {
-  background-color: #353535;
+  background-color: #eee8d5;
   padding: 2px;
 }
 a {
-  color: #99cc99;
+  color: #b58900;
 }
 a:visited {
-  color: #82BC82;
+  color: #cb4b16;
 }
 a:hover {
-  color: #82BC82;
+  color: #cb4b16;
 }
 h1 {
-  color: #6ACCCB;
+  color: #d33682;
 }
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #6ACCCB;
+  color: #859900;
 }
 pre {
-  background-color: #2D2D2D;
-  color: #fff;
-  border: 1pt solid #ccc;
+  background-color: #fdf6e3;
+  color: #657b83;
+  border: 1pt solid #93a1a1;
   padding: 1em;
-  box-shadow: 5pt 5pt 8pt #333;
+  box-shadow: 5pt 5pt 8pt #eee8d5;
 }
 pre code {
-  background-color: #2D2D2D;
+  background-color: #fdf6e3;
 }
 h1 {
   font-size: 1.8em;
@@ -247,26 +247,27 @@ h6 {
 table {
 
   overflow: auto;
-  box-shadow: 5pt 5pt 8pt #333;
+  box-shadow: 5pt 5pt 8pt #eee8d5;
 }
 
 table th {
   font-weight: bold;
-  background:#353535;
+  background:#EEE8D6;
 }
 
 table th,
 table td {
   padding: 6px 13px;
-  border: 1px solid #ccc;
+  border: 1px solid #C7CAC1;
 }
 
 table tr {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #C7CAC1;
 }
 
 table tr:nth-child(2n) {
 }
+
 
 
 @media (max-width: 540px) {
@@ -275,23 +276,47 @@ table tr:nth-child(2n) {
 figcaption{text-align:center;}
 
 /* PrismJS 1.14.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript */
-/**
- * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
- * Based on https://github.com/chriskempson/tomorrow-theme
- * @author Rose Pritchard
- */
+https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #ccc;
-  background: none;
+  color: #657b83; /* base00 */
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
+
   line-height: 1.5;
 
   -moz-tab-size: 4;
@@ -302,7 +327,16 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+}
 
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #073642; /* base02 */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #073642; /* base02 */
 }
 
 /* Code blocks */
@@ -314,72 +348,69 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #2d2d2d;
+  background-color: #fdf6e3; /* base3 */
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
   padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
 }
 
 .token.comment,
-.token.block-comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #999;
+  color: #93a1a1; /* base1 */
 }
 
 .token.punctuation {
-  color: #ccc;
+  color: #586e75; /* base01 */
 }
 
-.token.tag,
-.token.attr-name,
-.token.namespace,
-.token.deleted {
-  color: #e2777a;
-}
-
-.token.function-name {
-  color: #6196cc;
-}
-
-.token.boolean,
-.token.number,
-.token.function {
-  color: #f08d49;
+.namespace {
+  opacity: .7;
 }
 
 .token.property,
-.token.class-name,
+.token.tag,
+.token.boolean,
+.token.number,
 .token.constant,
-.token.symbol {
-  color: #f8c555;
+.token.symbol,
+.token.deleted {
+  color: #268bd2; /* blue */
 }
 
 .token.selector,
-.token.important,
-.token.atrule,
-.token.keyword,
-.token.builtin {
-  color: #cc99cd;
-}
-
+.token.attr-name,
 .token.string,
 .token.char,
-.token.attr-value,
-.token.regex,
-.token.variable {
-  color: #7ec699;
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: #2aa198; /* cyan */
 }
 
-.token.operator,
-.token.entity,
-.token.url {
-  color: #67cdcc;
+.token.entity {
+  color: #657b83; /* base00 */
+  background: #eee8d5; /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #859900; /* green */
+}
+
+.token.function,
+.token.class-name {
+  color: #b58900; /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #cb4b16; /* orange */
 }
 
 .token.important,
@@ -394,9 +425,7 @@ pre[class*="language-"] {
   cursor: help;
 }
 
-.token.inserted {
-  color: green;
-}
+
 
 pre[class*="language-"].line-numbers {
     position: relative;
@@ -442,12 +471,11 @@ pre[class*="language-"].line-numbers > code {
 
 
 
-
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 <style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div class="markdown-body">
 <p>三角函数1单位圆<br/>
-<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/%E5%8D%95%E4%BD%8D%E5%9C%86%E4%BE%8B%E9%A2%98.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/%E5%8D%95%E4%BD%8D%E5%9C%86%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98.html">高考真题</a></strong><br><br><br></p>
+<br><br><br><strong><a href="javascript:history.back()">&lt;上一页</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk">主屏幕Home</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E4%BE%8B%E9%A2%98/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B01%E5%8D%95%E4%BD%8D%E5%9C%86.html">例题</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><a href="https://xiaojiang.tk/%E9%AB%98%E8%80%83%E7%9C%9F%E9%A2%98/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B01%E5%8D%95%E4%BD%8D%E5%9C%86.html">高考真题</a></strong><br><br><br></p>
 
 <ul>
 <li>
