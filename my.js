@@ -106,12 +106,9 @@ $(document).ready(function () {
 		window.location = "https://xiaojiang.tk/知识点/解析几何2圆锥曲线.html"
 	});
 	
-	$("#几何转坐标").click(function () {
-		window.location = "https://xiaojiang.tk/知识点/解析几何3几何转坐标.html"
-	});
 	
 	$("#解析大题").click(function () {
-		window.location = "https://xiaojiang.tk/知识点/解析几何4解析大题.html"
+		window.location = "https://xiaojiang.tk/知识点/解析几何3解析大题.html"
 	});
 	
 	
