@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px" viewBox="0 0 80 80">
+    <style>
+@keyframes 数学logo_t { 0% { transform: translate(39.5px,39.5px) rotate(90deg) translate(-40px,-40px); } 100% { transform: translate(39.5px,39.5px) rotate(360deg) translate(-40px,-40px); } }
+    </style>
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="数学logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(39.5,39.5) rotate(90) translate(-40,-40)" style="animation: 2s linear infinite both 数学logo_t;">
+        <g id="iPhone-8" fill="#D8D8D8" stroke="#979797" transform="translate(-80,-80)">
+            <rect id="Rectangle" width="79" height="79" rx="8" transform="translate(0,0) translate(80.5,80.5)"/>
+        </g>
+    </g>
+</svg>

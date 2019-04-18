@@ -3,6 +3,18 @@
   height: 50%; 
 }
 
+img, object {
+   
+   height: 72px;
+   width: auto;
+}
+
+/*.svg {
+	
+	height: 60px;
+	width: auto;
+}*/
+
 
 .row [class^="col-xl"]{
 	
