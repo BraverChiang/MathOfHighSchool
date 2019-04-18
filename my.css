@@ -1,7 +1,13 @@
+.navbar {
+	
+	/*max-width: 1200px;*/
+}
+
 .bgimg {
   width: 100%;
   height: 50%; 
 }
+
 
 img, object {
    
