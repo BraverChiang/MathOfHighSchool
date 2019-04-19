@@ -139,16 +139,12 @@ $(document).ready(function () {
 		window.location = "https://xiaojiang.tk/知识点/数列1等差等比.html"
 	});
 	
-	$("#通项").click(function () {
-		window.location = "https://xiaojiang.tk/知识点/数列2通项.html"
-	});
-	
-	$("#前n项和").click(function () {
-		window.location = "https://xiaojiang.tk/知识点/数列3前n项和.html"
+	$("#通项与前n项和").click(function () {
+		window.location = "https://xiaojiang.tk/知识点/数列2通项与前n项和.html"
 	});
 	
 	$("#数学归纳法").click(function () {
-		window.location = "https://xiaojiang.tk/知识点/数列4数学归纳法.html"
+		window.location = "https://xiaojiang.tk/知识点/数列3数学归纳法.html"
 	});
 	
 	
@@ -167,13 +163,10 @@ $(document).ready(function () {
 		window.location = "https://xiaojiang.tk/知识点/概率统计3二项式.html"
 	});
 	
-	$("#随机事件").click(function () {
-		window.location = "https://xiaojiang.tk/知识点/概率统计4随机事件.html"
+	$("#随机事件与随机变量").click(function () {
+		window.location = "https://xiaojiang.tk/知识点/概率统计4随机事件与随机变量.html"
 	});
 
-	$("#随机变量").click(function () {
-		window.location = "https://xiaojiang.tk/知识点/概率统计5随机变量.html"
-	});
 
 
 	
