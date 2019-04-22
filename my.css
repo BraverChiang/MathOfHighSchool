@@ -1,6 +1,31 @@
+
 .navbar {
-	
-	/*max-width: 1200px;*/
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+	bottom: 0;
+	left: 0%;
+	right: 0%;
+	height: 72px;
+}
+
+.tabbar-item{
+	text-align: center;
+	color: #888888;
+	text-decoration: none;
+}
+
+.active{
+	color: #ffffff;
+}
+
+.navbar.center .navbar-inner {
+	text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+	display:inline-block;
+	float: none;
 }
 
 .bgimg {
@@ -52,7 +77,7 @@ img, object {
 
 
 
-. bottom {
+.bottom {
 	
 	position: absolute;
 	bottom: 16px;
