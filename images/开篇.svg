@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="360px" height="200px" viewBox="0 0 360 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="400px" height="200px" viewBox="0 0 400 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>Group</title>
+    <title>开篇</title>
     <desc>Created with Sketch.</desc>
     <g id="数学logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="iPhone-8" transform="translate(-100.000000, -80.000000)">
-            <g id="Group" transform="translate(80.000000, 80.000000)">
-                <rect id="Rectangle" x="0" y="0" width="400" height="200" rx="8"></rect>
-                <path d="M200,27.2125388 C219.116581,10.3404339 244.879022,0 273.220339,0 C332.193117,0 380,44.771525 380,100 C380,155.228475 332.193117,200 273.220339,200 C244.879022,200 219.116581,189.659566 200,172.787461 C180.883419,189.659566 155.120978,200 126.779661,200 C67.8068826,200 20,155.228475 20,100 C20,44.771525 67.8068826,0 126.779661,0 C155.120978,0 180.883419,10.3404339 200,27.2125388 Z M200,27.2125388 C179.338687,45.4480087 166.440678,71.3133932 166.440678,100 C166.440678,128.686607 179.338687,154.551991 200,172.787461 C220.661313,154.551991 233.559322,128.686607 233.559322,100 C233.559322,71.3133933 220.661313,45.4480087 200,27.2125388 Z" id="Combined-Shape" fill="#417505"></path>
-                <path d="M200,26 C220.916962,44.4535098 234,70.7786046 234,100 C234,129.221395 220.916962,155.54649 200,174 C179.083038,155.54649 166,129.221395 166,100 C166,70.7786046 179.083038,44.4535098 200,26 Z" id="Combined-Shape" fill="#F5A623"></path>
-                <text id="B" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#2D1616">
-                    <tspan x="266.756" y="28">B</tspan>
-                </text>
-                <text id="A∩B" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#2D1616">
-                    <tspan x="175.088" y="106">A∩B</tspan>
-                </text>
-                <text id="A∪B" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#2D1616">
-                    <tspan x="175.088" y="182">A∪B</tspan>
-                </text>
-                <text id="A" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#2D1616">
-                    <tspan x="115.412" y="28">A</tspan>
-                </text>
+        <g id="iPhone-8" transform="translate(-80.000000, -80.000000)">
+            <g id="开篇" transform="translate(80.000000, 80.000000)">
+                <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="399" height="199" rx="8"></rect>
+                <g id="集合" transform="translate(38.000000, 10.000000)">
+                    <ellipse id="Oval" fill-opacity="0.600114729" fill="#FF979E" cx="96" cy="90" rx="96" ry="90"></ellipse>
+                    <ellipse id="Oval-Copy" fill-opacity="0.547120848" fill="#91DCFF" cx="227" cy="90" rx="96" ry="90"></ellipse>
+                    <text id="B" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#2D1616">
+                        <tspan x="218.756" y="37">B</tspan>
+                    </text>
+                    <text id="A∩B" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#2D1616">
+                        <tspan x="137.088" y="97">A∩B</tspan>
+                    </text>
+                    <text id="A" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#2D1616">
+                        <tspan x="88" y="35">A</tspan>
+                    </text>
+                </g>
             </g>
         </g>
     </g>

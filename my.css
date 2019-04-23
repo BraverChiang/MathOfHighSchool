@@ -12,7 +12,24 @@
 .tabbar-item{
 	text-align: center;
 	color: #888888;
-	text-decoration: none;
+}
+
+a{ color: #1AA2B4;text-decoration:none; /*无链接时颜色*/ }
+
+.btn-warning {
+	
+	background-color: #D37BD8;
+	border-color: #D37BD8;
+	color: #ffffff;
+	
+}
+
+.btn-warning:hover, .btn-warning:active, .btn-warning:disabled{
+	
+	background-color: #A34BA8;
+	border-color: #A34BA8;
+	color: #ffffff;
+	
 }
 
 .icon {

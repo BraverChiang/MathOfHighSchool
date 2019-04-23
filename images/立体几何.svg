@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="200px" viewBox="0 0 400 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>立体几何</title>
+    <desc>Created with Sketch.</desc>
+    <g id="数学logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-2159.000000, -89.000000)">
+            <g id="立体几何" transform="translate(2159.000000, 89.000000)">
+                <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="399" height="199" rx="8"></rect>
+                <g id="几何体" transform="translate(33.000000, 18.000000)">
+                    <g id="圆柱体">
+                        <g id="Group-6" transform="translate(51.000000, 137.000000)">
+                            <g id="Group-4"></g>
+                        </g>
+                        <g id="圆柱" transform="translate(50.000000, 0.000000)">
+                            <path d="M55,164 C84.2710917,164 108,151.687831 108,136.5 C108,121.312169 84.2710917,109 55,109 C25.7289083,109 2,121.312169 2,136.5 C2,151.687831 25.7289083,164 55,164 Z" id="Oval-Copy-2" stroke="#979797" fill-opacity="0" fill="#D8D8D8" stroke-dasharray="3"></path>
+                            <path d="M54,136.5 L107,136.5" id="Path-11" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2"></path>
+                            <ellipse id="Oval" stroke="#3BBEFF" stroke-width="2" fill-opacity="0" fill="#D8D8D8" cx="55" cy="27.5" rx="53" ry="27.5"></ellipse>
+                            <path d="M1,137 C4.17405673,153.143131 21.8407234,162.143131 54,164" id="Path-9" stroke="#3BBEFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M54,137 C57.1740567,153.143131 74.8407234,162.143131 107,164" id="Path-9-Copy" stroke="#3BBEFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(80.500000, 150.500000) scale(-1, 1) translate(-80.500000, -150.500000) "></path>
+                            <path d="M1.5,27 L1.5,138" id="Path-7" stroke="#3BBEFF" stroke-width="2"></path>
+                            <path d="M107.5,27 L107.5,138" id="Path-8" stroke="#3BBEFF" stroke-width="2"></path>
+                        </g>
+                        <text id="r" font-family="Helvetica-BoldOblique, Helvetica" font-size="22" font-style="italic" font-weight="bold" fill="#000000">
+                            <tspan x="123.719238" y="134">r</tspan>
+                        </text>
+                        <text id="h" font-family="Helvetica-BoldOblique, Helvetica" font-size="22" font-style="italic" font-weight="bold" fill="#000000">
+                            <tspan x="137.280762" y="82">h</tspan>
+                        </text>
+                        <text id="圆柱" font-family="PingFangSC-Semibold, PingFang SC" font-size="22" font-weight="500" fill="#3BBEFF">
+                            <tspan x="0" y="55">圆柱</tspan>
+                        </text>
+                    </g>
+                    <g id="圆柱体" transform="translate(205.000000, 13.000000)">
+                        <g id="圆锥">
+                            <path d="M53,138 C82.2710917,138 106,125.687831 106,110.5 C106,95.3121694 82.2710917,83 53,83 C23.7289083,83 0,95.3121694 0,110.5 C0,125.687831 23.7289083,138 53,138 Z" id="Oval-Copy-2" stroke="#979797" fill-opacity="0" fill="#D8D8D8" stroke-dasharray="3"></path>
+                            <path d="M54,110.5 L107,110.5" id="Path-11-Copy" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2"></path>
+                            <path d="M53.5,0 L53.5,111" id="Path-8" stroke="#979797" stroke-dasharray="3"></path>
+                            <g id="Group-4" stroke="#FF9090" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M0,111.290323 C3.17405673,127.259871 20.8407234,136.163097 53,138" id="Path-9"></path>
+                                <path d="M53,111.290323 C56.1740567,127.259871 73.8407234,136.163097 106,138" id="Path-9-Copy" transform="translate(79.500000, 124.645161) scale(-1, 1) translate(-79.500000, -124.645161) "></path>
+                                <polyline id="Path-10" points="0.0189824034 109.064516 53.7361111 0 106 109.064516"></polyline>
+                            </g>
+                        </g>
+                        <text id="r-copy" font-family="Helvetica-BoldOblique, Helvetica" font-size="22" font-style="italic" font-weight="bold" fill="#000000">
+                            <tspan x="71.7192383" y="109">r</tspan>
+                        </text>
+                        <text id="h-copy" font-family="Helvetica-BoldOblique, Helvetica" font-size="22" font-style="italic" font-weight="bold" fill="#000000">
+                            <tspan x="54.2807617" y="64">h</tspan>
+                        </text>
+                        <text id="圆锥" font-family="PingFangSC-Semibold, PingFang SC" font-size="22" font-weight="500" fill="#FF9090">
+                            <tspan x="85" y="42">圆锥</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

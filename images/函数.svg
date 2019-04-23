@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="200px" viewBox="0 0 400 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>函数</title>
+    <desc>Created with Sketch.</desc>
+    <g id="数学logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-611.000000, -80.000000)">
+            <g id="函数" transform="translate(611.000000, 80.000000)">
+                <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="399" height="199" rx="8"></rect>
+                <g transform="translate(113.000000, 1.000000)">
+                    <g id="Group-5" transform="translate(26.297170, 46.000000)">
+                        <polyline id="Path-3" stroke="#FF9090" stroke-width="4" stroke-linecap="round" points="8.35719453 0.698623224 15.7706207 8.01856682 15.7706207 21.1984622 0 21.1984622 0 79.4537998 109.512964 79.4537998 109.512964 94.0648203 103.809205 100.698623"></polyline>
+                        <polyline id="Path-3-Copy" stroke="#FF9090" stroke-width="4" stroke-linecap="round" transform="translate(83.459312, 50.000000) scale(-1, -1) translate(-83.459312, -50.000000) " points="37.0600248 0 44.473451 7.3199436 44.473451 20.499839 28.7028303 20.499839 28.7028303 78.7551766 138.215794 78.7551766 138.215794 93.366197 132.512035 100"></polyline>
+                        <text id="函数function" font-family="PingFangSC-Medium, PingFang SC" font-size="18" font-weight="400" fill="#FF9090">
+                            <tspan x="16.6748303" y="57">函数function</tspan>
+                        </text>
+                    </g>
+                    <text id="输入-x" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#3BBEFF">
+                        <tspan x="0.144" y="25">输入 x</tspan>
+                    </text>
+                    <text id="输出-y" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" fill="#3BBEFF">
+                        <tspan x="105.276" y="190">输出 y</tspan>
+                    </text>
+                    <path id="Line-Copy" d="M141.5,150.777778 L141.5,140 C141.5,139.447715 141.947715,139 142.5,139 C143.052285,139 143.5,139.447715 143.5,140 L143.5,150.777778 L148.664885,150.777778 C149.126106,150.777778 149.5,151.151672 149.5,151.612893 C149.5,151.742541 149.469815,151.870408 149.411835,151.986368 L143.247041,164.315954 C143.040777,164.728483 142.539146,164.895694 142.126617,164.689429 C141.964999,164.608621 141.83395,164.477572 141.753142,164.315954 L135.588348,151.986368 C135.382084,151.573839 135.549294,151.072208 135.961823,150.865943 C136.077784,150.807963 136.205651,150.777778 136.335298,150.777778 L141.5,150.777778 Z" fill="#2EBAFF" fill-rule="nonzero"></path>
+                    <path id="Line-Copy-2" d="M47.5,38.7777778 L47.5,28 C47.5,27.4477153 47.9477153,27 48.5,27 C49.0522847,27 49.5,27.4477153 49.5,28 L49.5,38.7777778 L54.6648846,38.7777778 C55.1261061,38.7777778 55.5,39.1516717 55.5,39.6128931 C55.5,39.7425407 55.4698147,39.8704078 55.4118345,39.9863681 L49.2470414,52.3159544 C49.0407768,52.7284835 48.5391456,52.8956939 48.1266165,52.6894294 C47.9649988,52.6086205 47.8339504,52.4775721 47.7531416,52.3159544 L41.5883484,39.9863681 C41.3820839,39.573839 41.5492943,39.0722078 41.9618234,38.8659433 C42.0777837,38.8079631 42.2056507,38.7777778 42.3352983,38.7777778 L47.5,38.7777778 Z" fill="#3BBEFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

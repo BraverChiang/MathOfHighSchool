@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="200px" viewBox="0 0 400 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>导数</title>
+    <desc>Created with Sketch.</desc>
+    <g id="数学logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-3286.000000, -63.000000)">
+            <g id="导数" transform="translate(3286.000000, 63.000000)">
+                <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="399" height="199" rx="8"></rect>
+                <g transform="translate(50.000000, 10.000000)">
+                    <path id="Line-7" d="M291.5,170 L0,170 L-0.5,170 L-0.5,169 L0,169 L291.5,169 L291.5,165 L300.5,169.5 L291.5,174 L291.5,170 Z" fill="#000000" fill-rule="nonzero"></path>
+                    <path id="Line-8" d="M21,8.5 L21,180 L21,180.5 L20,180.5 L20,180 L20,8.5 L16,8.5 L20.5,-0.5 L25,8.5 L21,8.5 Z" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M4,126.906087 C52.2778962,138.632094 86.8263622,142.178169 107.645398,137.544313 C138.873952,130.593529 156.62298,114.401409 170.286023,100.726334 C183.949066,87.0512583 209.178162,58.5737402 226.712319,30.3124993 C238.401757,11.471672 244.059288,2.37849087 243.684913,3.032956" id="Path-12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="Oval" fill="#007583" cx="122" cy="133" r="2"></circle>
+                    <circle id="Oval-Copy-10" fill="#007583" cx="178" cy="92" r="2"></circle>
+                    <path d="M178,92 L178,133" id="Line-11" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"></path>
+                    <path d="M122,133 L178,92" id="Path-13" stroke="#1AA2B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M122,133 L178,133" id="Line-10" stroke="#979797" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"></path>
+                    <path id="Line-10-Copy" d="M123,143 L177,143 L177,138 C177,137.447715 177.447715,137 178,137 C178.552285,137 179,137.447715 179,138 L179,150 C179,150.552285 178.552285,151 178,151 C177.447715,151 177,150.552285 177,150 L177,145 L123,145 L123,150 C123,150.552285 122.552285,151 122,151 C121.447715,151 121,150.552285 121,150 L121,138 C121,137.447715 121.447715,137 122,137 C122.552285,137 123,137.447715 123,138 L123,143 Z" fill="#3BBEFF" fill-rule="nonzero"></path>
+                    <text id="△x" font-family="PingFangSC-Medium, PingFang SC" font-size="18" font-weight="400" fill="#3BBEFF">
+                        <tspan x="133.23" y="159">△x</tspan>
+                    </text>
+                    <text id="△y" font-family="PingFangSC-Medium, PingFang SC" font-size="18" font-weight="400" fill="#FF9090">
+                        <tspan x="189" y="119">△y</tspan>
+                    </text>
+                    <path id="Path-14" d="M187.5,92 L187.5,132 L192.5,132 C193.052285,132 193.5,132.447715 193.5,133 C193.5,133.552285 193.052285,134 192.5,134 L180.5,134 C179.947715,134 179.5,133.552285 179.5,133 C179.5,132.447715 179.947715,132 180.5,132 L185.5,132 L185.5,92 L180.5,92 C179.947715,92 179.5,91.5522847 179.5,91 C179.5,90.4477153 179.947715,90 180.5,90 L192.5,90 C193.052285,90 193.5,90.4477153 193.5,91 C193.5,91.5522847 193.052285,92 192.5,92 L187.5,92 Z" fill="#FF9090" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

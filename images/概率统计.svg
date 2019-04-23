@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="200px" viewBox="0 0 400 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>概率统计</title>
+    <desc>Created with Sketch.</desc>
+    <g id="数学logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8" transform="translate(-4298.000000, -100.000000)">
+            <g id="概率统计" transform="translate(4298.000000, 100.000000)">
+                <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="399" height="199" rx="8"></rect>
+                <g id="Group-10" transform="translate(20.000000, 82.000000)">
+                    <circle id="Oval" fill="#3BBEFF" cx="18" cy="18" r="18"></circle>
+                    <circle id="Oval-Copy-11" fill="#3BBEFF" cx="58.5" cy="18" r="18"></circle>
+                    <circle id="Oval-Copy-12" fill="#3BBEFF" cx="99" cy="18" r="18"></circle>
+                    <circle id="Oval-Copy-13" fill="#3BBEFF" cx="139.5" cy="18" r="18"></circle>
+                    <circle id="Oval-Copy-14" fill="#3BBEFF" cx="180" cy="18" r="18"></circle>
+                    <circle id="Oval-Copy-15" fill="#3BBEFF" cx="220.5" cy="18" r="18"></circle>
+                    <circle id="Oval-Copy-16" fill="#3BBEFF" cx="261" cy="18" r="18"></circle>
+                    <circle id="Oval-Copy-17" fill="#3BBEFF" cx="301.5" cy="18" r="18"></circle>
+                    <circle id="Oval-Copy-18" fill="#FF9090" cx="342" cy="18" r="18"></circle>
+                </g>
+                <g id="概率球" transform="translate(27.000000, 87.000000)" fill="#FFFFFF" font-family="PingFangSC-Medium, PingFang SC" font-size="18" font-weight="400">
+                    <g id="Group-7">
+                        <text id="06">
+                            <tspan x="0" y="19">06</tspan>
+                        </text>
+                        <text id="07">
+                            <tspan x="41" y="19">07</tspan>
+                        </text>
+                        <text id="08">
+                            <tspan x="81" y="19">08</tspan>
+                        </text>
+                        <text id="09">
+                            <tspan x="122" y="19">09</tspan>
+                        </text>
+                        <text id="04">
+                            <tspan x="163" y="19">04</tspan>
+                        </text>
+                        <text id="08">
+                            <tspan x="204" y="19">08</tspan>
+                        </text>
+                        <text id="07">
+                            <tspan x="245" y="19">07</tspan>
+                        </text>
+                        <text id="06">
+                            <tspan x="285" y="19">06</tspan>
+                        </text>
+                        <text id="03">
+                            <tspan x="326" y="19">03</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
