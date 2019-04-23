@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 	var  mainURL = "https://xiaojiang.tk/"
 	var  startChapter = ["开篇",       "集合","逻辑","不等式","线性规划","复数","初中"];
-	var  mathFunction = ["函数",       "指数对数", "初等函数及图像性质", "综合函数及图像性质", "分类讨论"];
+	var  mathFunction = ["函数",       "指数对数", "初等函数", "综合函数", "分类讨论"];
 	var  trigonometric = ["三角函数",   "单位圆", "和差倍角", "图像性质", "解三角"]
 	var  vector = ["向量",             "平面向量", "空间向量"]
 	var  solidGeo = ["立体几何",        "几何体", "线面关系", "空间角", "空间向量法"]
