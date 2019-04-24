@@ -3,14 +3,7 @@
 
 $(document).ready(function () {
 
-	var animation = bodymovin.loadAnimation({
-		container: document.getElementById("bm"),
-		renderer:"svg",
-		loop:true,
-		autoplay:true,
-		path:"datas/bookself.json"
-		// path: 'https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json'
-	});
+	
 	
 
 	var  mainURL = "https://xiaojiang.tk/"
@@ -78,7 +71,14 @@ $(document).ready(function () {
 		
 	});
 
-	
+	var animation = bodymovin.loadAnimation({
+		container: document.getElementById("bm"),
+		renderer:"svg",
+		loop:true,
+		autoplay:true,
+		path:"datas/bookself.json"
+		// path: 'https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json'
+	});
 
 
 });
