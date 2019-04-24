@@ -3,6 +3,16 @@
 
 $(document).ready(function () {
 
+	var animation = bodymovin.loadAnimation({
+		container: document.getElementById("bm"),
+		renderer:"svg",
+		loop:true,
+		autoplay:true,
+		path:"datas/bookself.json"
+		// path: 'https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json'
+	});
+	
+
 	var  mainURL = "https://xiaojiang.tk/"
 	var  startChapter = ["开篇",       "集合","逻辑","不等式","线性规划","复数","初中"];
 	var  mathFunction = ["函数",       "指数对数", "初等函数", "综合函数", "分类讨论"];
