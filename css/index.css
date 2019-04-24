@@ -16,6 +16,18 @@
 	color: #888888;
 }
 
+#active1{
+	color: #1AA2B4;
+}
+
+#active2{
+	color: #A34BA8;
+}
+
+#active3{
+	color: #29A745;
+}
+
 a{ color: #1AA2B4;text-decoration:none; /*无链接时颜色*/ }
 
 .btn-warning {
