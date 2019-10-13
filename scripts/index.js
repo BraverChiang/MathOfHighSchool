@@ -1,9 +1,16 @@
 
+function msgup_bar(){
+$("#C1_L1").html('Save99');
+};
 
 
 $(document).ready(function () {
+	msgup_bar();
+	
 
-	$("#C1_L1").html('Save9');
+
+
+	
 	
 
 	var  mainURL = "https://xiaojiang.tk/"
