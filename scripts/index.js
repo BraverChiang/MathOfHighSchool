@@ -18,6 +18,10 @@ $(document).ready(function () {
 	var  probability = ["概率统计",     "统计", "排列组合","二项式","随机事件与随机变量"]
 	var  allChapter = [startChapter, mathFunction, trigonometric, vector, solidGeo, 
 		analyticGeo, derivative, sequence, probability];
+		
+		
+		
+		$("#C1_L1").html('Save阿斯顿发生ee');
 
 	// 很不错, 就这样把, 可以少些很多代码
 	$(".section").click(function () {
