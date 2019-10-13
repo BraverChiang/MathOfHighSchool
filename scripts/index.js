@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
 
-	
+	$("#C1_L1").html('Save9');
 	
 
 	var  mainURL = "https://xiaojiang.tk/"
@@ -27,7 +27,7 @@ $(document).ready(function () {
 	$(".section").click(function () {
 		console.log($(this).html());
 		
-		$("#C1_L1").html('Save2');
+		
 
 		for (let j = 0; j < allChapter.length; j++) {
 			const element = allChapter[j];
@@ -40,6 +40,8 @@ $(document).ready(function () {
 				}
 			}
 		}
+		
+		
 		
 	});
 
