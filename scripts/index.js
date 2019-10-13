@@ -67,7 +67,12 @@ $(document).ready(function () {
 					
 					//“知识点/“后面的就是 Mweb的标题, 如: C1基础_L1集合
 					let string = mainURL+"知识点/" 
-					+ chapterNumber + chapter[0] + "_" + lessonNumber + chapter[i]+".html"
+					
+					+ chapterNumber + chapter[0] + "_" + lessonNumber + chapter[i]
+					
+					+".html"
+					
+					+"#page"
 					console.log(string);
 					window.location = string
 				}
@@ -85,7 +90,7 @@ $(document).ready(function () {
 			for (var i = 1; i < element.length ; i++) {
 				if ($(this).html() == element[i]) {
 					console.log(i);
-					let string = mainURL+"高考真题/"+element[0]+i+element[i]+"/"+element[0]+i+element[i]+".html"
+					let string = mainURL+"高考真题/"+element[0]+i+element[i]+".html"
 					console.log(string);
 					window.location = string
 				}
@@ -103,7 +108,7 @@ $(document).ready(function () {
 			for (var i = 1; i < element.length ; i++) {
 				if ($(this).html() == element[i]) {
 					console.log(i);
-					let string = mainURL+"例题/"+element[0]+i+element[i]+"/"+element[0]+i+element[i]+".html"
+					let string = mainURL+"例题/"+element[0]+i+element[i]+".html"
 					console.log(string);
 					window.location = string
 				}
