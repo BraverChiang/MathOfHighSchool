@@ -21,7 +21,7 @@ $(document).ready(function () {
 		
 		
 		
-		$("#C1_L1").html('Save阿斯顿发生ee');
+		$("#C1_L1").html('Save2');
 
 	// 很不错, 就这样把, 可以少些很多代码
 	$(".section").click(function () {
