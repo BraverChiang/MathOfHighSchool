@@ -21,11 +21,13 @@ $(document).ready(function () {
 		
 		
 		
-		$("#C1_L1").html('Save2');
+		
 
 	// 很不错, 就这样把, 可以少些很多代码
 	$(".section").click(function () {
 		console.log($(this).html());
+		
+		$("#C1_L1").html('Save2');
 
 		for (let j = 0; j < allChapter.length; j++) {
 			const element = allChapter[j];
