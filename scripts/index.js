@@ -66,7 +66,7 @@ $(document).ready(function () {
 					const lessonNumber = "L"+i;
 					
 					//“知识点/“后面的就是 Mweb的标题, 如: C1基础_L1集合
-					let string = mainURL+"知识点/" 
+					let string = mainURL+"LessonsOfMath/" 
 					
 					+ chapterNumber + chapter[0] + "_" + lessonNumber + chapter[i]
 					
