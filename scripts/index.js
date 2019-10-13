@@ -72,7 +72,7 @@ $(document).ready(function () {
 					
 					+".html"
 					
-					+"#page"
+					+"#L1好_C2好"
 					console.log(string);
 					window.location = string
 				}
