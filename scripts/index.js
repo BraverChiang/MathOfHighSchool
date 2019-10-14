@@ -1,14 +1,14 @@
 //全局变量, 以后修改全局变量即可	
 	var  mainURL = "https://xiaojiang.tk/"
-	var  startChapter = ["基础",       "集合","逻辑","不等式","公式","初中","小题目"];
+	var  startChapter = ["基础",       "集合","逻辑","不等式","公式大全","初中","小题目"];
 	var  mathFunction = ["函数",       "函数简介", "函数的类型", "函数的性质", "画函数图像"];
 	var  trigonometric = ["三角函数",   "三角函数简介", "三角恒等式", "图像性质", "解三角形"]
 	var  vector = ["向量, 复数",         "向量", "复数"]
 	var  solidGeo = ["立体几何",        "空间几何体", "线面位置关系", "空间角, 空间距离"]
-	var  analyticGeo = ["解析几何",     "圆锥曲线", "曲线位置关系", "角度距离", "动态解析", "线性规划" ] //, "极坐标", "参数方程" 
+	var  analyticGeo = ["解析几何",     "圆锥曲线", "曲线位置关系", "角度距离", "解析题", "线性规划" ] //, "极坐标", "参数方程" 
 	var  derivative = ["导数",         "导数简介", "导数运算公式", "导数求最值"]
 	var  sequence = ["数列",           "数列简介", "通项", "前n项和", "数学证明方法"]
-	var  probability = ["概率统计",     "样本的统计", "事件的概率","计数原理","随机变量的分布"]
+	var  probability = ["概率统计",     "样本的统计", "事件的概率","计数原理","随机变量"]
 	var  allChapter = [startChapter, mathFunction, trigonometric, vector, solidGeo, 
 		analyticGeo, derivative, sequence, probability];
 	
