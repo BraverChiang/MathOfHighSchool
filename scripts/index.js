@@ -1,9 +1,9 @@
 //全局变量, 以后修改全局变量即可	
 	var  mainURL = "https://xiaojiang.tk/"
 	var  startChapter = ["基础",       "集合","逻辑","不等式"];
-	var  mathFunction = ["函数",       "指数对数", "初2等函数", "综合函数", "分类讨论"];
-	var  trigonometric = ["三角函数",   "三角函数简介", "三角恒等式", "图像性质", "解三角形"]
-	var  vector = ["向量,复数",         "平面向量", "复数"]
+	var  mathFunction = ["函数",       "函数简介", "函数的类型", "函数的性质", "画函数图像"];
+	var  trigonometric = ["三角函数",   "三角函数简介", "三角恒等式", "三角函数图像性质", "解三角形"]
+	var  vector = ["向量, 复数",         "向量", "复数"]
 	var  solidGeo = ["立体几何",        "几何体", "线面关系", "空5间角", "空间向量法"]
 	var  analyticGeo = ["解析几何",     "直线与圆", "圆锥曲线", "解6析大题"]
 	var  derivative = ["导数",         "切线斜率", "求导运算", "求极7值", "构造原函数"]
@@ -72,7 +72,6 @@ $(document).ready(function () {
 					
 					+".html"
 					
-					+"#L1好_C2好"
 					console.log(string);
 					window.location = string
 				}
